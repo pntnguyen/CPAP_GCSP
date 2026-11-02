@@ -1,0 +1,150 @@
+# Data processing
+
+## Library
+
+```{r}
+required <- c("readxl", "magrittr", "lubridate", "janitor", "dplyr", "skimr")
+```
+
+Installing those that are not installed yet:
+
+```{r}
+to_install <- required[!required %in% installed.packages()[, "Package"]]
+if (length(to_install))
+  install.packages(to_install)
+```
+
+Loading the packages for interactive use:
+
+```{r}
+invisible(sapply(required, library, character.only = TRUE))
+```
+
+## Data importation
+
+Set working directory and import data
+
+```{r}
+setwd("../Data")
+raw_df <- read_excel("Cancer_Prevention_Awareness_Raw_Data_251203.xlsx", sheet = "DATA")
+```
+
+## Skim data
+
+```{r}
+skim(raw_df)
+```
+
+
+```{r}
+skim(raw_df) |>
+  filter(complete_rate == 1) |>
+  nrow()
+```
+
+Only 187 variables have complete rate = 1
+
+## Recoding variables
+
+### Screening question
+
+```{r}
+raw_df %<>%
+  mutate(
+    gender = case_when(SQ1 == 1 ~ "Male", .default = "Female"),
+    age = SQ2,
+    city = case_when(
+      SQ3 == 1  ~ "Seoul",
+      SQ3 == 2  ~ "Busan",
+      SQ3 == 3  ~ "Daegu",
+      SQ3 == 4  ~ "Incheon",
+      SQ3 == 5  ~ "Gwangju",
+      SQ3 == 6  ~ "Daejeon",
+      SQ3 == 7  ~ "Ulsan",
+      SQ3 == 8  ~ "Sejong",
+      SQ3 == 9  ~ "Gyeonggi",
+      SQ3 == 10 ~ "Gangwon",
+      SQ3 == 11 ~ "Chungcheongbuk",
+      SQ3 == 12 ~ "Chungcheongnam",
+      SQ3 == 13 ~ "Jeollabuk",
+      SQ3 == 14 ~ "Jeollanam",
+      SQ3 == 15 ~ "Gyeongsangbuk",
+      SQ3 == 16 ~ "Gyeongsangnam",
+      SQ3 == 17 ~ "Jeju"
+    ),
+    city_size = case_when(
+      SQ3_1 == 1 ~ "Large City (Metropolitan)",
+      SQ3_1 == 2 ~ "Medium/Small City",
+      SQ3_1 == 3 ~ "County Area (including Eup/Myeon/Dong)"
+    )
+  )
+```
+
+### Awareness of Cancer and health determinants
+
+```{r}
+raw_df  %<>%
+  mutate(
+    cc_diagnosised = case_when(Q1 == 1 ~ "Self", Q1 == 2 ~ "Family", .default = "No"),
+    aware_10codes = case_when(Q8 == 1 ~ "Yes (No details)", Q8 == 2 ~ "Yes (Details)", .default = "Never"),
+    cc_search = case_when(Q11 == 1 ~ "Yes", .default = "No")
+  )
+```
+
+### Rule 1
+
+```{r}
+raw_df %<>%
+  mutate(
+    ## smoking cause cancer
+    cc_aw = case_when(Q13 == 1 ~ "Yes", .default = "No"),
+    ## daily average cigarettes of ex-smoker
+    ex_smkr_daily_avg = coalesce(Q14_2_ETC_1, 0),
+    ## years of ex-smoker
+    ex_smkr_years = coalesce(Q14_2_ETC_2, 0),
+    ## time since quitting of ex-smoker
+    ex_smkr_time_quit = coalesce(Q14_2_ETC_3, 0),
+    ## daily average cigarettes of current-smoker
+    cr_smkr_daily_avg = coalesce(Q14_3_ETC_1, 0),
+    ## years of current-smoker
+    cr_smkr_years = coalesce(Q14_3_ETC_2, 0),
+    ## Have you ever attempted to quit smoking?
+    attitude_to_quit = case_when(Q15 == 1 ~ "Yes", Q15 == 2 ~ "No", .default = "Not applicable"),
+    ## Have you ever received education on smoking cessation? 
+    smk_educated = case_when(Q19 == 1 ~ "Yes", .default = "No"),
+  ) 
+```
+
+### Demographics
+
+```{r}
+raw_df %<>%
+  mutate(
+    marital_status = case_when(DQ2 == 1 ~ "Single", DQ2 == 2 ~ "Married", .default = "Disvorced/Separated/Widowed"),
+    height = Q74,
+    weight = Q75,
+    education = case_when(DQ4 %in% c(1,2) ~ "Middle school or less", DQ2 == 2 ~ "High school", .default = "College or more"),
+    monthly_income = case_when(DQ5 %in% c(1,2,3) ~ "<3", DQ5 %in% c(4,5,6) ~ "3-6", .default = "6 ≤")
+  ) 
+```
+
+### Cancer experience
+
+```{r}
+raw_df %<>%
+  mutate(
+    personal_cc_exp  = 2 - DQ7_1,
+    family_cc_exp    = 2 - DQ7_2,
+    close_to_cc_exp  = 2 - DQ7_3,
+    dont_know_cc_exp = 2 - DQ7_4
+  )
+```
+
+save data
+
+```{r}
+setwd("../Data")
+saveRDS(raw_df, file = "cancer_awareness_2025_processed.rds")
+```
+
+

@@ -1,0 +1,308 @@
+# Exploratory 
+
+## Library
+
+```{r}
+required <- c(
+  "readxl",
+  "magrittr",
+  "lubridate",
+  "janitor",
+  "dplyr",
+  "skimr",
+  "ggplot2",
+  "sf",
+  "stringr",
+  "gtsummary"
+)
+```
+
+Installing those that are not installed yet:
+
+```{r}
+to_install <- required[!required %in% installed.packages()[, "Package"]]
+if (length(to_install))
+  install.packages(to_install)
+```
+
+Loading the packages for interactive use:
+
+```{r}
+invisible(sapply(required, library, character.only = TRUE))
+```
+
+## Import data
+
+Korean map
+
+```{r}
+#| results: hide 
+setwd("../Data")
+korea_map <- st_read(dsn = "gadm41_KOR.gpkg", layer = "ADM_ADM_1") |>
+  sf::st_transform(5179) |>
+  mutate(city = str_extract(NAME_1, "^[^-]+"))
+```
+
+Cancer Awareness data
+
+```{r}
+setwd("../Data")
+df <- readRDS("cancer_awareness_2025_processed.rds")
+```
+
+## Population characteristics
+
+### Social demographic
+
+```{r}
+df |>
+  mutate(
+    gender         = factor(gender, levels = c("Male", "Female")),
+    city_size      = factor(
+      city_size,
+      levels = c(
+        "Large City (Metropolitan)",
+        "Medium/Small City",
+        "County Area (including Eup/Myeon/Dong)"
+      )
+    ),
+    marital_status = factor(
+      marital_status,
+      levels = c("Single", "Married", "Disvorced/Separated/Widowed")
+    ),
+    education      = factor(
+      education,
+      levels = c("Middle school or less", "High school", "College or more")
+    ),
+    monthly_income = factor(monthly_income, levels = c("<3", "3-6", "6 ≤"))
+  ) |>
+  tbl_summary(
+    label = list(gender = "Gender",
+                 city_size = "Region",
+                 marital_status = "Marital Status",
+                 education = "Education level",
+                 monthly_income = "Monthly income (million KRW)"),
+    include = c(gender, city_size, marital_status, education, monthly_income)
+  )|>
+  bold_labels()
+```
+
+
+### Spatial distribution of collected samples
+
+```{r}
+#| fig-width: 8
+#| fig-height: 8
+
+df |>
+  group_by(city) |>
+  count() |>
+  ungroup() |>
+  mutate(per = n/sum(n)) |> 
+  left_join(korea_map, ., by = "city") |>
+  ggplot(aes(
+    fill = per,
+    geometry = geom,
+    label = city
+  )) +
+  geom_sf() +
+  paletteer::scale_fill_paletteer_c(
+    "ggthemes::Classic Blue",
+    na.value = "white",
+    labels = scales::label_percent(),    
+    name = "Percentage of samples"
+  ) +
+  geom_sf_text(size = 3, color = "black") +
+  theme_bw() +
+  theme(
+    axis.text  = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_blank(),
+    legend.position = "bottom",
+    legend.key.width = unit(1, "cm")
+  )
+```
+
+## Ever-smoker population
+
+```{r}
+ever_smoke_df <- df |>
+  filter(Q14 != 1) |>
+  mutate(
+    smoker = case_when(Q14 == 2 ~ "Ex-smoker", .default = "Current smoker"),
+    quitting_status = case_when(smoker == "Current smoker" & attitude_to_quit == "Yes" ~ "Fail to quit",
+                                smoker == "Ex-smoker" & attitude_to_quit == "Yes" ~ "Success to quit",
+                                .default = "Current smoker & dont want"),
+    failed_cess = case_when(quitting_status == "Fail to quit" ~ 1,
+                            .default = 0)
+  ) |>
+  filter(quitting_status != "Current smoker & dont want")
+```
+
+### Social demographic
+
+```{r}
+ever_smoke_df %<>%
+  mutate(
+    gender         = factor(gender, levels = c("Male", "Female")),
+    city_size      = factor(
+      city_size,
+      levels = c(
+        "Large City (Metropolitan)",
+        "Medium/Small City",
+        "County Area (including Eup/Myeon/Dong)"
+      )
+    ),
+    marital_status = factor(
+      marital_status,
+      levels = c("Single", "Married", "Disvorced/Separated/Widowed")
+    ),
+    education      = factor(
+      education,
+      levels = c("Middle school or less", "High school", "College or more")
+    ),
+    monthly_income = factor(monthly_income, levels = c("<3", "3-6", "6 ≤"))
+  ) 
+
+ever_smoke_df |>
+  tbl_summary(
+    by = quitting_status,
+    label = list(gender = "Gender",
+                 city_size = "Region",
+                 marital_status = "Marital Status",
+                 education = "Education level",
+                 monthly_income = "Monthly income (million KRW)"),
+    include = c(gender, city_size, marital_status, education, monthly_income,quitting_status)
+  )|>
+  bold_labels() |> 
+  add_p()
+```
+
+### Other factors
+
+```{r}
+ever_smoke_df |>
+  mutate(
+    pack_year = case_when(
+      smoker == "Ex-smoker" ~ (ex_smkr_daily_avg / 20) * ex_smkr_years,
+      smoker == "Current smoker" ~ (cr_smkr_daily_avg / 20) * cr_smkr_years
+    ),
+    bmi = weight / (height / 100)^2,
+    current_ocupation = case_when(
+      DQ1_3_1 == 1 ~ "Day shift",
+      DQ1_3_1 == 2 ~ "Shift work",
+      DQ1_3_1 == 3 ~ "Night shift",
+      .default = "Not applicable"
+    ),
+    smk_educated = factor(smk_educated, levels = c("Yes", "No")),
+    personal_cc_exp = factor(
+      personal_cc_exp,
+      levels = c(1, 0),
+      labels = c("Yes", "No")
+    ),
+    family_cc_exp = factor(
+      family_cc_exp,
+      levels = c(1, 0),
+      labels = c("Yes", "No")
+    ),
+    close_to_cc_exp = factor(
+      close_to_cc_exp,
+      levels = c(1, 0),
+      labels = c("Yes", "No")
+    )
+  ) |>
+  tbl_summary(
+    by = quitting_status,
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})",
+      all_categorical() ~ "{n} / {N} ({p}%)"
+    ),
+    digits = all_continuous() ~ 2,
+    label = list(
+      smk_educated = "Received education of smoking cessation",
+      pack_year = "Pack year",
+      current_ocupation = "Current ocupation",
+      personal_cc_exp = "Personal experienced with cancer",
+      family_cc_exp = "Family experienced with cancer",
+      close_to_cc_exp = "Close relationship experienced with cancer"
+    ),
+    type  = list(
+      c(smk_educated, personal_cc_exp, family_cc_exp, close_to_cc_exp) ~ "categorical"
+    ),
+    include = c(
+      age,
+      bmi,
+      pack_year,
+      quitting_status,
+      smk_educated,
+      current_ocupation,
+      personal_cc_exp,
+      family_cc_exp,
+      close_to_cc_exp
+    )
+  ) |>
+  add_p()
+```
+
+## Practice of other cancer prevention recommendations
+
+```{r}
+ever_smoke_df |>
+  mutate(
+    diet_practice = case_when(Q37 == 1 ~ "Yes", .default = "No"),
+    drinking_practice = case_when(
+      Q53 %in% c(1, 2) ~ "Light/Moderate",
+      Q53 %in% c(3, 4) ~ "Heavy/Addiction",
+      .default = "Not drink"
+    ),
+    exercise_practice = case_when(Q64 == 1 ~ "Yes", .default = "No"),
+    high_inten_min_week = Q65_1_1 * Q65_1_2,
+    moderate_inten_min_week = Q65_2_1 * Q65_2_2,
+    healthy_weight_practice = case_when(Q70 == 1 ~ "Yes", .default = "No")
+  ) |>
+  mutate(across(
+    c(diet_practice, exercise_practice, healthy_weight_practice),
+    ~ factor(.x, levels = c("Yes", "No"))
+  ),
+  drinking_practice = factor(
+    drinking_practice,
+    levels = c("Not drink", "Light/Moderate", "Heavy/Addiction")
+  )) |>
+  tbl_summary(
+    by = quitting_status,
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})",
+      all_categorical() ~ "{n} / {N} ({p}%)"
+    ),
+    type  = list(
+      c(
+        diet_practice,
+        drinking_practice,
+        exercise_practice,
+        healthy_weight_practice
+      ) ~ "categorical"
+    ),
+    label = list(
+      diet_practice = "Diet practice",
+      drinking_practice = "Drinking practice",
+      exercise_practice = "Exercise practice",
+      high_inten_min_week = "High-intensity physical activity minutes per week",
+      moderate_inten_min_week = "Moderate-intensity physical activity minutes per week",
+      healthy_weight_practice = "Healthy weight practice"
+    ),
+    digits = all_continuous() ~ 2,
+    include = c(
+      diet_practice,
+      drinking_practice,
+      exercise_practice,
+      high_inten_min_week,
+      moderate_inten_min_week,
+      healthy_weight_practice
+    )
+  ) |>
+  add_p()
+```
+
+
+
+

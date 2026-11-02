@@ -1,0 +1,370 @@
+# Questionaire
+
+## Screening question
+
+**SQ1.** What is your gender? (1: Male, 2: Female)
+
+**SQ2.** What is your age? (Number)
+
+**SQ3.** Where is your place of residence?
+
+  1.  Seoul
+  2.  Busan
+  3.  Daegu
+  4.  Incheon
+  5.  Gwangju
+  6.  Daejeon
+  7.  Ulsan
+  8.  Sejong
+  9.  Gyeonggi
+  10. Gangwon
+  11. Chungbuk
+  12. Chungnam
+  13. Jeonbuk
+  14. Jeonnam
+  15. Gyeongbuk
+  16. Gyeongnam
+  17. Jeju
+
+**SQ3_1.** What is the size of your residential region?
+
+  1.  Large City (Metropolitan)
+  2.  Medium/Small City
+  3.  County Area (including Eup/Myeon/Dong)
+
+## Awareness of Cancer
+
+**Q1.** Have you or any of your family members ever been diagnosed with or treated for cancer?
+
+1.  Yes (Self)
+2.  Yes (Family)
+3.  No
+
+**Q2_1 to Q2_14.** The following questions are about your perception of cancer. 
+Please answer based on your usual thoughts regarding cancer and national cancer management (1: Highly Insufficient, 2: Insufficient, 3: Moderate, 4: Sufficient, 5: Highly Sufficient)
+
+-   Q2_1: National cancer prevention support (Cancer prevention projects such as smoking cessation, sobriety, diet, HPV vaccination, etc.)
+
+-   Q2_2: Provision of cancer information by the state (Provision of cancer statistics, correct cancer knowledge, complementary and alternative medicine, etc.)
+
+-   Q2_3: National cancer screening project for early detection of cancer
+
+-   Q2_4: Need for improvement in national cancer screening methods (e.g., introduction of colonoscopy screening)
+
+-   Q2_5: Need for expanding the scope of targets for national cancer screening (e.g., expanding targets for lung cancer screening)
+
+-   Q2_6: Specialized medical institutions for diagnosing and treating cancer
+
+-   Q2_7: Expectation of receiving appropriate treatment at the right time when diagnosed with cancer
+
+-   Q2_8: Intention to visit a medical institution within your residential area (city/province) for cancer treatment
+
+-   Q2_9: Institutional support from the state during cancer treatment (Linking cancer diagnosis-treatment, providing opportunities to participate in clinical trials for new anticancer drugs, etc.)
+
+-   Q2_10: Financial support from the state during cancer treatment (Calculated exception \[5% out-of-pocket patient cost\], support for medical expenses, health insurance coverage for new anticancer drugs, etc.)
+
+-   Q2_11: State support for recovering daily life after cancer treatment (Cancer survivor management, home healthcare management, etc.)
+
+-   Q2_12: State support for terminal cancer patient management, palliative care, and caregiving (Hospice, palliative care, etc.)
+
+-   Q2_13: Research on developing state-of-the-art medical technologies and new drugs to conquer cancer
+
+-   Q2_14: Digital health using advanced technologies such as cancer big data and artificial intelligence
+
+## Awareness and Practice of Cancer Prevention Guidelines
+
+**Q4.** To what extent do you agree with the following statements regarding "cancer"? (1: Strongly Agree, 2: Agree, 3: Disagree somewhat, 4: Strongly disagree)
+
+-   Q4_1: Everything in the world seems like a carcinogen.
+
+-   Q4_2: There is not much one can do to avoid cancer.
+
+-   Q4_3: There are too many recommendations for cancer prevention, making it difficult to know which one to follow.
+
+-   Q4_4: When I think of cancer, death comes to mind first.
+
+**Q5.** What do you think has the greatest impact on the development of cancer among the following?
+
+1.  Family history (Genetics)
+2.  Lifestyle habits
+3.  Stress
+4.  Environmental pollution
+5.  Immunity
+6.  Luck
+7.  Other ( \_\_\_\_\_\_\_\_ )
+
+**Q6.** Have you ever heard that cancer can be prevented through changes in lifestyle habits? (1: Yes, 2: No)
+
+**Q6_1.** Do you think cancer is preventable?
+
+1.  Yes (It is)
+2.  No (It is not)
+
+**Q6_2.** Have you ever made specific efforts to prevent cancer? 
+
+1.	I am currently making specific efforts to prevent cancer. 
+2.	I have made efforts in the past. 
+3.	I have never made any efforts. 
+
+**Q7.** What are your thoughts on "practicing lifestyle habits for cancer prevention"? 
+
+1.	I have never specially thought about it. 
+2.	I have not decided yet whether to make special efforts for cancer prevention. 
+3.	I don't think I will make special efforts for cancer prevention. 
+4.	I will actively practice lifestyle habits for cancer prevention. 
+
+### Awareness of 10 codes of Cancer Prevention Guildlines
+
+**Q8.** Are you aware of the fact that there are guidelines for cancer prevention? 
+
+1.	I have heard of the cancer prevention rules, but I do not know the details well. 
+2.	I have heard of the cancer prevention rules and I know their contents. 
+3.	I have never heard of the cancer prevention rules. 
+
+**Q9_1.** Please state 3 rules in order that you think are the easiest to follow among the cancer prevention rules (this is not a variables), 10 values below for **Q9_1_1** to **Q9_1_3**
+
+**Q9_2.** Please state 3 rules in order that you think are the most difficult to follow among the cancer prevention rules. (Note: Responses chosen in Q9-1 cannot be selected), 10 values below for **Q9_2_1** to **Q9_2_3**
+
+**Q9_3.** Please state 3 rules in order that you think do not help much with cancer prevention among the cancer prevention rules, 10 values below for **Q9_3_1** to **Q9_3_3**  
+
+1.	Do not smoke, and avoid secondhand smoke. 
+2.	Eat plenty of vegetables and fruits with a colorful, balanced diet. 
+3.	Keep your food light and avoid charred/burnt food. 
+4.	Avoid drinking even a small amount of 1–2 glasses a day for cancer prevention. 
+5.	Walk or exercise for more than 30 minutes, at least 5 times a week, enough to sweat. 
+6.	Maintain a healthy weight suitable for your body type. 
+7.	Get vaccinated against Hepatitis B and HPV according to the vaccination guidelines. 
+8.	Maintain safe sexual behaviors to avoid sexually transmitted diseases. 
+9.	Follow safety and health guidelines in the workplace to avoid exposure to carcinogenic substances. 
+10.	Receive regular cancer screenings according to the early detection guidelines without missing any. 
+
+**Q10.** The following are items included in overseas cancer prevention guidelines but not currently included in Korea's national cancer prevention guidelines. 
+
+Please tell us all the items that you think need to be included in Korea's guidelines as well.
+
+1.	Avoid exposure to air pollutants (fine dust) 
+2.	Avoid exposure to excessive ultraviolet (UV) rays 
+3.	Avoid exposure to medical radiation 
+4.	Limit intake of fast food and processed food 
+5.	Limit intake of red meat 
+6.	Limit intake of processed meat 
+7.	Limit intake of sugar-sweetened beverages 
+8.	Eat a rich amount of whole grains and legumes 
+
+### Cancer-Related Health Determinants (Health Literacy)
+
+**Q11.** Have you ever searched for information about cancer even once? (1: Yes, 2: No)
+
+**Q12.** Have you used an electronic wearable device to monitor or track your health or activities within the past year? (*Refers to using a device to monitor or track health or activities. Electronic wearable devices include Apple Watch, Galaxy Watch, Garmin Vivofit, Fitbit, Xiaomi Mi Watch, etc.*) (1: Yes, 2: No)
+
+## Cancer Prevention Rule 1. Do not smoke, and avoid secondhand smoke
+
+**Q13.** Do you think smoking causes cancer? (1: Yes, 2: No)
+
+**Q14.** Have you ever smoked cigarettes?
+
+1.	No 
+2.	I only smoked in the past (Daily average: ___ cigarettes, smoked for ___ years / time since quitting: ___ years ago) 
+3.	Currently smoking (Daily average: ___ cigarettes, smoked for ___ years) 
+
+**Q14_1.** Is the reason you do not smoke for cancer prevention? (1. Yes, 2. No, 3. Not applicable (Currently smoking))
+
+Among people smoked in the past
+
+**Q14_2_ETC_1.** Daily average: ___ cigarettes (number)
+**Q14_2_ETC_2.** Smoked for ___ years (number)
+**Q14_2_ETC_3.** Time since quitting: ___ years ago (number)
+
+Among people currently smoking
+
+**Q14_3_ETC_1.** Daily average: ___ cigarettes (number)
+**Q14_3_ETC_2.** Smoked for ___ years (number)
+
+**Q15.** Have you ever attempted to quit smoking? 
+
+1.	Yes
+2.	No
+3.	Not applicable (Non-smoker)
+
+**Q15_1.** What was the reason you attempted to quit smoking? 
+
+1.	Because my health deteriorated 
+2.	After receiving education 
+3.	Due to financial reasons 
+4.	Due to recommendations from people around me 
+5.	Other ( ________ ) 
+6.	Never attempted 
+7.	Not applicable (Non-smoker) 
+
+**Q16.** What is the biggest barrier for you when attempting or maintaining smoking cessation among the following? 
+
+1.	Not feeling the health hazards caused by smoking 
+2.	Not knowing effective smoking cessation methods well 
+3.	Fear of smoking cessation side effects (stress, weight gain, withdrawal symptoms, etc.) 
+4.	Difficult to resist smoking temptations around me 
+5.	Other ( ________ ) 
+6.	Not applicable (Non-smoker) 
+
+**Q17.** What do you think about the recommendation to quit smoking for cancer prevention? 
+
+1.	I have never specially thought about it.
+2.	I haven't decided yet whether to quit smoking or not.
+3.	I don't think I will make special efforts to quit smoking.
+4.	I think I must quit smoking.
+
+**Q18.** Do you plan to quit smoking within the next 1 month?
+
+1.	I plan to quit smoking within 1 month.
+2.	I plan to quit smoking within 6 months.
+3.	Not within 6 months, but I plan to quit smoking someday.
+4.	Currently, I have no intention to quit smoking at all.
+5.	Not applicable (Non-smoker) 
+
+**Q19.** Have you ever received education on smoking cessation? (1: Yes, 2: No)
+
+**Q20_1 - Q21_5.** Please check all the tobacco products you currently use mainly. (can do one hot encoding)
+
+1.	Combustible cigarettes (regular cigarettes) 
+2.	Heated tobacco products (IQOS, Glo, Lil, etc.) 
+3.	Liquid electronic cigarettes 
+4.	Other tobacco products (snus, water pipe, cigar, etc.) 
+5.	Not applicable (Non-smoker) 
+
+**Q21.** Do you think nicotine-free electronic cigarettes are also harmful? (1: Yes, 2: No)
+
+**Q22.** Compared to smoking combustible cigarettes, what do you think about using nicotine-containing electronic cigarettes? 
+
+1.	Combustible cigarettes are more harmful.
+2.	Electronic cigarettes are more harmful.
+3.	Both are equally harmful.
+
+**Q23.** Are you aware that exposure to other people's tobacco smoke (secondhand smoke) is a Group 1 carcinogen? (1: Yes, 2: No)  
+
+**Q24.** Where have you mainly seen anti-smoking advertisements (messages that talk about the dangers of tobacco products or encourage smoking cessation)?
+
+1.	Broadcast media: TV/Radio commercials, etc.
+2.	Social media: YouTube, Instagram, Facebook, Twitter, TikTok, etc.
+3.	Print media: Newspapers, magazines.
+4.	Billboards (streets, bus stops, subways, etc.), banners, posters.
+5.	Restaurants or bars.
+6.	Hospitals/clinics or pharmacies.
+7.	Stores that sell tobacco products, such as convenience stores (including product displays and signs).
+8.	Events (exhibitions, markets, festivals, sports events, or music concerts).
+9.	Never seen before.
+
+**Q25_1 - Q25_3** Which of the following tobacco regulation policies do you think is the most important? 
+
+1.	Increasing cigarette prices 
+2.	Regulating tobacco advertisements at retail stores (convenience stores and tobacco outlets) 
+3.	Expanding smoke-free zones 
+4.	Disclosing tobacco ingredients and emissions 
+5.	Introducing and expanding graphic warning images on cigarette packs 
+6.	Expanding campaigns and public service announcements about the harms of smoking 
+7.	Enacting laws that completely ban the manufacturing and selling of tobacco 
+8.	Other opinions ( ________ ) 
+
+## Body metrics
+
+**Q74.** What is your height? (Please write your height without shoes.) (cm)
+
+**Q75.** What is your weight? (Please write your weight without thick outerwear.) (kg)
+
+## Demographics
+
+**DQ1_1_1** The job held for the longest time?
+
+1. Managers
+2. Professionals and related workers
+3. Clerical workers
+4. Service workers
+5. Sales workers
+6. Skilled agricultural, forestry, and fishery workers
+7. Craft and related trades workers
+8. Plant and machine operators and assemblers
+9. Elementary occupations (unskilled workers)
+10. Military personnel
+11. Firefighters
+12. Not applicable (under 19 years of age, unemployed, or economically inactive)
+13. Don't know, no response
+
+**DQ1_1_2** Current Occupation
+
+1. Managers
+2. Professionals and related workers
+3. Clerical workers
+4. Service workers
+5. Sales workers
+6. Skilled agricultural, forestry, and fishery workers
+7. Craft and related trades workers
+8. Plant and machine operators and assemblers
+9. Elementary occupations (unskilled workers)
+10. Military personnel
+11. Firefighters
+12. Not applicable (under 19 years of age, unemployed, or economically inactive)
+13. Don't know, no response
+
+**DQ1_2_1_1.** This is a question regarding your average daily working hours. DQ1-2-1. The job in which you worked for the longest period / Options:
+
+**DQ1_2_2_1.** This is a question regarding your average daily working hours. DQ1-2-2. Current occupation / Options:
+
+**DQ1_3_1.** The job held for the longest time
+
+1. Day shift
+2. Shift work
+3. Night shift
+4. Not applicable
+ 
+**DQ1_3_1.** Current Occupation 
+
+1. Day shift
+2. Shift work
+3. Night shift
+4. Not applicable
+
+**DQ2.** What is your marital status?
+
+1. Single
+2. Married
+3. Divorced
+4. Separated
+5. Widowed
+
+**DQ3.** How many people, including yourself, live in your household?
+
+**DQ4.** What is your educational background? (Dropping out does not count as graduation.)
+
+1. Elementary school graduate or below
+2. Middle school graduate
+3. High school graduate
+4. University graduate (including those currently enrolled or on a leave of absence)
+5. Graduate school degree or higher
+
+**DQ5.** What is the average total monthly income for your entire household, including bonuses, interest income, and any other sources?
+
+1. 990,000 KRW or less
+2. 1,000,000–1,990,000 KRW
+3. 2,000,000–2,990,000 KRW
+4. 3,000,000–3,990,000 KRW
+5. 4,000,000–4,990,000 KRW
+6. 5,000,000–5,990,000 KRW
+7. 6,000,000–6,990,000 KRW
+8. 7,000,000–9,990,000 KRW
+9. 10,000,000 KRW or more
+
+**DQ6.** Are you currently economically active?
+
+1. Yes (employed person)
+2. No (unemployed person, person not in the labor force)
+
+**DQ7_1.** Do you, or does someone close to you, have personal experience with cancer (as a cancer patient or cancer survivor)? I am a person with personal experience with cancer. (1: Yes, 2: No)
+
+**DQ7_2.** Do you, or does anyone close to you, have personal experience with cancer (as a cancer patient or cancer survivor)? There is someone in my family who has experienced cancer. (1: Yes, 2: No)
+
+**DQ7_3.** Do you, or does someone close to you, have personal experience with cancer (as a cancer patient or cancer survivor)? Someone close to me has personal experience with cancer. (1: Yes, 2: No) 
+
+**DQ7_4.** Do you or any of your close acquaintances have personal experience with cancer (as a cancer patient or cancer survivor)? I do not know anyone who has experienced cancer. (1: Yes, 2: No) 
+
+=> One hot encoding
+
+
+

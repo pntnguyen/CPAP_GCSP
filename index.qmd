@@ -1,0 +1,157 @@
+# Research note
+
+## Literature review
+
+[@choi2025korean]
+
+- The Korean Code Against Cancer comprises a set of recommendations intended to prevent cancer. 
+
+- The National Cancer Control Committee approved the currently published 10 codes for cancer prevention.
+
+  (1) no smoking and avoidance of secondhand smoke; 
+  (2) consuming sufficient fruits and vegetables as part of a balanced diet;
+  (3) reducing salt intake and avoiding burnt or charred foods; 
+  (4) limiting alcohol consumption; 
+  (5) engaging in regular physical activity (at least 30 minutes a day, 5 days a week); 
+  (6) maintaining a healthy body weight; 
+  (7) receiving immunization against hepatitis B virus and human papillomavirus; 
+  (8) practicing safe sex by maintaining a single sexual partner and using condoms; 
+  (9) following health and safety guidelines to avoid exposure to occupational carcinogens; 
+  (10) undergoing regular cancer screening
+
+### Related works
+
+[@oh2022awareness] 
+
+- reports data regarding the awareness and practice of cancer prevention among Koreans in 2021 and behavioral changes during the coronavirus disease 2019 
+
+- evaluated their associations with potential risk factors through multiple logistic regression analysis adjusted for age, gender, residence, marital status, education, and income.
+
+Finding:
+
+- 80% aware, 45% practice. Characteristics among  
+
+- The level of awareness and practice regarding cancer prevention **has not changed significantly** over the last 15 years, even though various campaigns and social events to raise awareness have been conducted. 
+
+=> Overall of the awareness and practice of 10 codes from 2007 to 2021
+
+[@choi2025gender]
+
+- This study found that while awareness was reasonably high among both men and women, there was a **significant gender gap** in **practice**
+
+=> access the awareness and practice of 10 codes among 2 groups (men and women) from 2007 to 2023
+
+[@kwon2025longitudinal]
+
+- mediation analysis: knowledge(exposure), attidude (mediator), practice (outcome) between 2014 and 2023 to assess both the direct and indirect effects of these variables on smoking behavior
+
+- only consider in ex-smoker and current-smoker
+
+Finding:
+
+- **Knowledge** that smoking causes cancer was associated with a higher likelihood of having a **positive attitude** toward quitting smoking to prevent cancer
+
+- **Knowledge** was associated with a higher likelihood of **practicing** smoking cessation 
+
+- **Attitude** was also associated with a higher likelihood of **practicing** smoking cessation
+
+- KAP model: **attitude** toward smoking cessation for cancer prevention **mediated** the relationship between **knowledge** of smoking’s role in causing cancer and the **practice** of smoking cessation
+
+- Prioritizing the identification of factors that influence smoking cessation behaviors is essential for the development and implementation of effective policies, as these factors may serve as mediating variables in smoking cessation practices
+
+=> health education programs could effectively **promote better attitudes** and support healthy behaviors 
+
+- Based on these findings, if current tobacco control policies have predominantly focused on “cigarettes” and reducing tobacco consumption among
+smokers, future policies should pivot toward “comprehensive regulation” and smoking prevention, **emphasizing the importance of “attitudes” and “knowledge”** among both smokers and non-smokers
+
+Research limitation:
+
+- future investigations should incorporate gender analyses
+
+- future research should also include individuals affected by secondhand and thirdhand smoke
+
+[@choi2025awareness]
+
+- Surveyed Korean adults to identify the awareness and practice of the recommended guidelines for dietary factors.
+
+[@nguyen2025determinants]
+
+- Identify the factors influencing PCa screening behavior and explore the underlying motivations among Korean men
+
+## Idea
+
+Population description: age, gender, residential region, marriage, education level, monthly income
+
+- Awareness and practice of no smoking and avoidance of secondhand smoke in Korea, 2025
+
+::: {.callout-note title = "Contribution"}
+
+Another descriptive research
+
+:::
+
+- Among who ever smoker, which profile has higher risk to fail smoking dissertation:
+
+  - Knowledge, attitude
+  
+  - Practice of limiting alcohol consumption, physical activities
+  
+  - Smoking history (pack-year)
+  
+  - Social demographic
+  
+  - Job (working hours, day/night shift)
+  
+  - Family background
+
+Hypothesis: who success to quit have different characteristics like practicing of other cancer prevention recommendation, short smoking history
+
+::: {.callout-note title = "Contribution"}
+
+Identify risk factors related to fail smoking dissertation or who successfully dissertation smoking, 
+
+policy implement
+
+:::
+
+[@hosseinpoor2012socioeconomic]
+
+- Monitoring inequalities in non communicable disease risk factor prevalence can help to inform and target effective interventions. The prevalence of current daily smoking, low fruit and vegetable consumption, physical inactivity, and heavy episodic alcohol drinking were quantified and compared across wealth and education levels in low- and middle-income country groups
+
+we can monitor inequalities in awareness and practice among smoking, balanced diet, physical inactivity, and alcohol drinking quantified and compared across income and education levels in large and medium/county city
+
+
+## Smoking-related knowledge, attitude, and practice for cancer prevention
+
+-   Knowlegde:
+
+Evaluated by assessing whether individuals were aware of the no-smoking guidelines and whether they understood that smoking causes cancer
+
+-   Awareness:
+
+The following questions were posed:
+
+“Do you think smoking causes cancer?”
+
+“Do you think that not smoking (i.e., avoiding smoking and secondhand smoke) prevents cancer?”
+
+=\> Knowledge of the link between smoking and cancer was determined by considering only those respondents who answered “yes” to these questions
+
+-   Attitude:
+
+Assessed by asking “Do you think about the recommendation to quit smoking for cancer prevention?” with the following response categories: “I do not think about it,” “I have not decided to quit smoking yet,” “I do not try to quit smoking,” and “I will quit smoking.”
+
+=\> positive attitude toward smoking cessation was operationally defined as responding “I will quit smoking.”
+
+-   Practice:
+
+Assessed by asking, “Have you ever smoked?” with the following response categories: “non-smoker,” “ex-smoker,” and “current smoker.”
+
+This study included only individuals with a history of smoking, thereby excluding those who had never smoked.
+
+
+## Reference
+
+
+
+
