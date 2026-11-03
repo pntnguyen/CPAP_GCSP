@@ -43,6 +43,17 @@ korea_map <- st_read(dsn = "gadm41_KOR.gpkg", layer = "ADM_ADM_1") |>
   mutate(city = str_extract(NAME_1, "^[^-]+"))
 ```
 
+Korea district map data
+
+```{r}
+#| results: hide 
+setwd("../Data")
+korea_map_district <- st_read(dsn = "gadm41_KOR.gpkg", layer = "ADM_ADM_2") |>
+  sf::st_transform(5179) |>
+  mutate(city = str_extract(NAME_1, "^[^-]+"))
+```
+
+
 Cancer Awareness data
 
 ```{r}
@@ -304,5 +315,110 @@ ever_smoke_df |>
 ```
 
 
+## Socialeconomic inequality
 
+
+```{r}
+district_lookup <- c(
+  # Seoul
+  "중"="Jung","종로"="Jongno","도봉"="Dobong","중랑"="Jungnang","광진"="Gwangjin",
+  "강북"="Gangbuk","강남"="Gangnam","구로"="Guro","성북"="Seongbuk","강동"="Gangdong",
+  "관악"="Gwanak","동작"="Dongjak","서대문"="Seodaemun","양천"="Yangcheon",
+  "강서"="Gangseo","서초"="Seocho","송파"="Songpa","노원"="Nowon","동대문"="Dongdaemun",
+  "영등포"="Yeongdeungpo","성동"="Seongdong","금천"="Geumcheon","은평"="Eunpyeong",
+  "용산"="Yongsan","마포"="Mapo",
+  # Busan
+  "북"="Buk","사상"="Sasang","해운대"="Haeundae","동래"="Dongnae","부산진"="Busanjin",
+  "사하"="Saha","연제"="Yeonje","동"="Dong","서"="Seo","수영"="Suyeong",
+  "금정"="Geumjeong","남"="Nam","기장"="Gijang","영도"="Yeongdo",
+  # Daegu, Incheon, Gwangju, Daejeon, Ulsan, Sejong
+  "달성"="Dalseong","달서"="Dalseo","수성"="Suseong",
+  "남동"="Namdong","미추홀"="Michuhol","계양"="Gyeyang","부평"="Bupyeong",
+  "연수"="Yeonsu","강화"="Ganghwa","광산"="Gwangsan","대덕"="Daedeok",
+  "유성"="Yuseong","울주"="Ulju","세종"="Sejong",
+  # Gyeonggi
+  "성남"="Seongnam","오산"="Osan","수원"="Suwon","평택"="Pyeongtaek",
+  "남양주"="Namyangju","하남"="Hanam","안성"="Anseong","의정부"="Uijeongbu",
+  "용인"="Yongin","포천"="Pocheon","파주"="Paju","양평"="Yangpyeong",
+  "고양"="Goyang","안산"="Ansan","화성"="Hwaseong","부천"="Bucheon","양주"="Yangju",
+  "이천"="Icheon","구리"="Guri","광명"="Gwangmyeong","군포"="Gunpo","안양"="Anyang",
+  "김포"="Gimpo","시흥"="Siheung","광주"="Gwangju",
+  # Gangwon
+  "원주"="Wonju","고성"="Goseong","춘천"="Chuncheon","강릉"="Gangneung",
+  "동해"="Donghae","철원"="Cheorwon","인제"="Inje",
+  # Chungbuk / Chungnam
+  "청주"="Cheongju","음성"="Eumseong","진천"="Jincheon",
+  "금산"="Geumsan","공주"="Gongju","부여"="Buyeo","천안"="Cheonan","논산"="Nonsan",
+  "서산"="Seosan",
+  # Jeonbuk / Jeonnam
+  "익산"="Iksan","정읍"="Jeongeup","김제"="Gimje","장수"="Jangsu","순창"="Sunchang",
+  "화순"="Hwasun","순천"="Suncheon","담양"="Damyang","장성"="Jangseong","나주"="Naju",
+  "목포"="Mokpo",
+  # Gyeongbuk / Gyeongnam
+  "구미"="Gumi","안동"="Andong","경산"="Gyeongsan","경주"="Gyeongju","포항"="Pohang",
+  "고령"="Goryeong","김천"="Gimcheon","칠곡"="Chilgok","문경"="Mungyeong","성주"="Seongju",
+  "사천"="Sacheon","밀양"="Miryang","창원"="Changwon","양산"="Yangsan","의령"="Uiryeong",
+  "함안"="Haman","진주"="Jinju","김해"="Gimhae",
+  # Jeju
+  "서귀포"="Seogwipo","제주"="Jeju"
+)
+```
+
+```{r}
+#| fig-width: 8
+#| fig-height: 8
+
+df |>
+  mutate(
+    # "성남시 분당구" / "창원시마산합포구" -> "성남시" / "창원시"
+    district_clean = str_remove(SQ3_2_2, "(?<=시)\\s*[^시]+구$"),
+    district_base  = str_sub(district_clean, 1, -2),
+    # drop the 구/군/시
+    district_en    = unname(district_lookup[district_base]),
+    district_type  = case_when(
+      str_sub(district_clean, -1) == "구" ~ "Gu",
+      str_sub(district_clean, -1) == "군" ~ "Gun",
+      str_sub(district_clean, -1) == "시" ~ "Si",
+      .default = NA_character_
+    ),
+    across(
+      c(
+        city,
+        district_clean,
+        district_base,
+        district_en,
+        district_type
+      ),
+      str_squish
+    )
+  ) |>
+  select(SQ3_2_2,
+         city,
+         district_clean,
+         district_base,
+         district_en,
+         district_type,
+         city_size) |>
+  distinct(city, district_en, district_type, .keep_all = TRUE) |>
+  select(city, district_en, district_type, city_size) |>
+  right_join(
+    korea_map_district,
+    .,
+    by = join_by(
+      "city" == city,
+      "district_en" == "NAME_2",
+      "district_type" == "TYPE_2"
+    )
+  ) |>
+  ggplot(aes(geometry = geom, fill = city_size)) +
+  scale_fill_discrete(na.value = "white")+
+  geom_sf()+
+  theme_bw()+
+  theme(
+    axis.text  = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_blank(),
+    legend.position = "bottom",
+    legend.key.width = unit(1, "cm"))
+```
 

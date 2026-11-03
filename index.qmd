@@ -116,10 +116,47 @@ policy implement
 
 [@hosseinpoor2012socioeconomic]
 
+Background
+
 - Monitoring inequalities in non communicable disease risk factor prevalence can help to inform and target effective interventions. The prevalence of current daily smoking, low fruit and vegetable consumption, physical inactivity, and heavy episodic alcohol drinking were quantified and compared across wealth and education levels in low- and middle-income country groups
+
+Methodology
+
+- Data were divided into four pooled datasets according to sex and LIC or MIC status, four NCD risk factors:
+  - Current daily smoking was the current daily use of any tobacco product including cigarettes, cigars, pipes, and local tobacco products 
+  - Low fruit and vegetable consumption referred to an intake of fewer than five total servings of fruits and/or vegetables (about 400 grams) per day
+  - Physical inactivity was classified as the failure to meet WHO recommendations on physical activity for health, which are defined as engaging in at least 150 minutes of moderate-intensity activity per week or 75 minutes of vigorous-intensity activity per week
+  - Heavy episodic alcohol drinking was the consumption of five or more (in men) or four or more (in women) standard alcoholic drinks on at least one day during the preceding week
+
+- Socioeconomic status: household wealth status
+
+- Education was ranked according to five categories: no formal schooling, less than primary school, primary school completed, secondary/high school completed, and college completed or above.
+  
+- Socioeconomic inequality in each risk factor prevalence was
+measured using the slope index of inequality (SII) and the relative index of inequality (RII) 
+
+- SII and RII can be interpreted as the prevalence rate difference and the
+prevalence rate ratio
+
+  - SII > 0 and RII > 1: regular inequality (i.e. an inverse association between socioeconomic status and risk factor prevalence)
+
+  - Conversely, reverse inequality referred to higher risk factor prevalence among populations of higher socioeconomic position
+  
+Finding:
+
+- The strongest regular relative inequalities were reported for current daily smoking, particularly for educationrelated inequality.
+
+- Low fruit and vegetable consumption demonstrated regular inequality, with consistently higher prevalence among the disadvantaged across all study groups
+
+- For heavy episodic alcohol drinking, data indicated a mixed pattern of inequality
+
+=> wealth- and education-related inequalities showed similar directional trends for each risk factor, with varying magnitude across sex-country income groups, indicating a concerted need for educational and povertyreduction oriented policies
+
+::: {.callout-note title = "Idea"}
 
 we can monitor inequalities in awareness and practice among smoking, balanced diet, physical inactivity, and alcohol drinking quantified and compared across income and education levels in large and medium/county city
 
+:::
 
 ## Smoking-related knowledge, attitude, and practice for cancer prevention
 
