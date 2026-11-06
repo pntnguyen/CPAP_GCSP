@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Data processing – National Survey on Cancer Prevention Awareness and Practice 2025</title>
+<title>4&nbsp; Data processing – National Survey on Cancer Prevention Awareness and Practice 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./data_explore.html" rel="next">
-<link href="./questionaire.html" rel="prev">
+<link href="./questionnaire_2023.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_processing.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data processing</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_processing.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data processing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,20 +151,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./questionaire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Questionaire</span></span></a>
+  <a href="./questionnaire_2025.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Questionnaire codebook (2025)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./questionnaire_2023.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Questionnaire codebook (2023)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data_processing.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data processing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data processing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data_explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exploratory</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory</span></span></a>
   </div>
 </li>
     </ul>
@@ -177,16 +183,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#library" id="toc-library" class="nav-link active" data-scroll-target="#library"><span class="header-section-number">3.1</span> Library</a></li>
-  <li><a href="#data-importation" id="toc-data-importation" class="nav-link" data-scroll-target="#data-importation"><span class="header-section-number">3.2</span> Data importation</a></li>
-  <li><a href="#skim-data" id="toc-skim-data" class="nav-link" data-scroll-target="#skim-data"><span class="header-section-number">3.3</span> Skim data</a></li>
-  <li><a href="#recoding-variables" id="toc-recoding-variables" class="nav-link" data-scroll-target="#recoding-variables"><span class="header-section-number">3.4</span> Recoding variables</a>
+  <li><a href="#library" id="toc-library" class="nav-link active" data-scroll-target="#library"><span class="header-section-number">4.1</span> Library</a></li>
+  <li><a href="#data-importation" id="toc-data-importation" class="nav-link" data-scroll-target="#data-importation"><span class="header-section-number">4.2</span> Data importation</a></li>
+  <li><a href="#skim-data" id="toc-skim-data" class="nav-link" data-scroll-target="#skim-data"><span class="header-section-number">4.3</span> Skim data</a></li>
+  <li><a href="#recoding-variables" id="toc-recoding-variables" class="nav-link" data-scroll-target="#recoding-variables"><span class="header-section-number">4.4</span> Recoding variables</a>
   <ul class="collapse">
-  <li><a href="#screening-question" id="toc-screening-question" class="nav-link" data-scroll-target="#screening-question"><span class="header-section-number">3.4.1</span> Screening question</a></li>
-  <li><a href="#awareness-of-cancer-and-health-determinants" id="toc-awareness-of-cancer-and-health-determinants" class="nav-link" data-scroll-target="#awareness-of-cancer-and-health-determinants"><span class="header-section-number">3.4.2</span> Awareness of Cancer and health determinants</a></li>
-  <li><a href="#rule-1" id="toc-rule-1" class="nav-link" data-scroll-target="#rule-1"><span class="header-section-number">3.4.3</span> Rule 1</a></li>
-  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"><span class="header-section-number">3.4.4</span> Demographics</a></li>
-  <li><a href="#cancer-experience" id="toc-cancer-experience" class="nav-link" data-scroll-target="#cancer-experience"><span class="header-section-number">3.4.5</span> Cancer experience</a></li>
+  <li><a href="#screening-question" id="toc-screening-question" class="nav-link" data-scroll-target="#screening-question"><span class="header-section-number">4.4.1</span> Screening question</a></li>
+  <li><a href="#awareness-of-cancer-and-health-determinants" id="toc-awareness-of-cancer-and-health-determinants" class="nav-link" data-scroll-target="#awareness-of-cancer-and-health-determinants"><span class="header-section-number">4.4.2</span> Awareness of Cancer and health determinants</a></li>
+  <li><a href="#rule-1" id="toc-rule-1" class="nav-link" data-scroll-target="#rule-1"><span class="header-section-number">4.4.3</span> Rule 1</a></li>
+  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"><span class="header-section-number">4.4.4</span> Demographics</a></li>
+  <li><a href="#cancer-experience" id="toc-cancer-experience" class="nav-link" data-scroll-target="#cancer-experience"><span class="header-section-number">4.4.5</span> Cancer experience</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -196,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data processing</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data processing</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -213,8 +219,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="library" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="library"><span class="header-section-number">3.1</span> Library</h2>
+<section id="library" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="library"><span class="header-section-number">4.1</span> Library</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -238,8 +244,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="data-importation" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="data-importation"><span class="header-section-number">3.2</span> Data importation</h2>
+<section id="data-importation" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="data-importation"><span class="header-section-number">4.2</span> Data importation</h2>
 <p>Set working directory and import data</p>
 <div class="cell">
 <details class="code-fold">
@@ -249,8 +255,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="skim-data" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="skim-data"><span class="header-section-number">3.3</span> Skim data</h2>
+<section id="skim-data" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="skim-data"><span class="header-section-number">4.3</span> Skim data</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3193,10 +3199,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Only 187 variables have complete rate = 1</p>
 </section>
-<section id="recoding-variables" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="recoding-variables"><span class="header-section-number">3.4</span> Recoding variables</h2>
-<section id="screening-question" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="screening-question"><span class="header-section-number">3.4.1</span> Screening question</h3>
+<section id="recoding-variables" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="recoding-variables"><span class="header-section-number">4.4</span> Recoding variables</h2>
+<section id="screening-question" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="screening-question"><span class="header-section-number">4.4.1</span> Screening question</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3232,8 +3238,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="awareness-of-cancer-and-health-determinants" class="level3" data-number="3.4.2">
-<h3 data-number="3.4.2" class="anchored" data-anchor-id="awareness-of-cancer-and-health-determinants"><span class="header-section-number">3.4.2</span> Awareness of Cancer and health determinants</h3>
+<section id="awareness-of-cancer-and-health-determinants" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="awareness-of-cancer-and-health-determinants"><span class="header-section-number">4.4.2</span> Awareness of Cancer and health determinants</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3246,8 +3252,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="rule-1" class="level3" data-number="3.4.3">
-<h3 data-number="3.4.3" class="anchored" data-anchor-id="rule-1"><span class="header-section-number">3.4.3</span> Rule 1</h3>
+<section id="rule-1" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="rule-1"><span class="header-section-number">4.4.3</span> Rule 1</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3273,8 +3279,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="demographics" class="level3" data-number="3.4.4">
-<h3 data-number="3.4.4" class="anchored" data-anchor-id="demographics"><span class="header-section-number">3.4.4</span> Demographics</h3>
+<section id="demographics" class="level3" data-number="4.4.4">
+<h3 data-number="4.4.4" class="anchored" data-anchor-id="demographics"><span class="header-section-number">4.4.4</span> Demographics</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3289,8 +3295,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="cancer-experience" class="level3" data-number="3.4.5">
-<h3 data-number="3.4.5" class="anchored" data-anchor-id="cancer-experience"><span class="header-section-number">3.4.5</span> Cancer experience</h3>
+<section id="cancer-experience" class="level3" data-number="4.4.5">
+<h3 data-number="4.4.5" class="anchored" data-anchor-id="cancer-experience"><span class="header-section-number">4.4.5</span> Cancer experience</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3772,13 +3778,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./questionaire.html" class="pagination-link" aria-label="Questionaire">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Questionaire</span></span>
+      <a href="./questionnaire_2023.html" class="pagination-link" aria-label="Questionnaire codebook (2023)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Questionnaire codebook (2023)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./data_explore.html" class="pagination-link" aria-label="Exploratory">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exploratory</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exploratory</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

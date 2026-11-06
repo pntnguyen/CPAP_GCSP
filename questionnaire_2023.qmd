@@ -1,0 +1,219 @@
+## Questionnaire codebook (2023)
+
+Translated from the original Korean codebook. "Answer values" lists each coded value and its meaning (taken from the 2023 questionnaire answer sheet), or the data type for numeric and free-text items. For multiple-response items, each option is its own variable and holds that option's number when selected. Heading levels can be adjusted to fit your document.
+
+## Screening questions
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 1 | ID | Unique key |  | Unique respondent ID |  |
+| 2 | SQ1 | Sex | What is your sex? | 1 = Male<br>2 = Female |  |
+| 3 | SQ2 | Age (in years) | How old are you? | Numeric: age in full years (eligible: 20–74; others screened out) |  |
+| 4 | SQ2_1 | Age group | Age group | 1 = 20s<br>2 = 30s<br>3 = 40s<br>4 = 50s<br>5 = 60s<br>6 = 70s |  |
+| 5 | SQ3 | Region of residence | Which region do you live in? | 1 = Seoul<br>2 = Busan<br>3 = Daegu<br>4 = Incheon<br>5 = Gwangju<br>6 = Daejeon<br>7 = Ulsan<br>8 = Sejong<br>9 = Gyeonggi<br>10 = Gangwon<br>11 = Chungbuk<br>12 = Chungnam<br>13 = Jeonbuk<br>14 = Jeonnam<br>15 = Gyeongbuk<br>16 = Gyeongnam<br>17 = Jeju |  |
+| 6 | SQ4 | Region size | Region size? | 1 = Large city<br>2 = Small/medium-sized city<br>3 = County area (including eup/myeon/dong) |  |
+
+## Awareness of cancer prevention
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 7 | Q1_1 | First thing associated with cancer | What is the first thing that comes to mind when you think of "cancer"? (Answer only one) | Free text |  |
+| 8 | Q1_2 | Main cause of cancer | Which of the following do you think has the greatest influence on the occurrence of cancer? | 1 = Family history<br>2 = Lifestyle habits<br>3 = Stress<br>4 = Other |  |
+| 9 | Q1_2_4_etc | Main cause of cancer_other (specified) |  | Free text |  |
+| 10 | Q1_3 | Awareness that cancer can be prevented through lifestyle changes | Have you ever heard that cancer can be prevented through lifestyle changes? | 1 = Yes, I have heard<br>2 = No, I have not heard |  |
+| 11 | Q1_4 | Perceived preventability of cancer | Do you think cancer is preventable? | 1 = Yes<br>2 = No |  |
+| 12 | Q1_5 | Specific efforts to prevent cancer | Have you ever made specific efforts to prevent cancer? | 1 = Currently making specific efforts to prevent cancer<br>2 = Made efforts in the past, but currently making no effort to prevent cancer<br>3 = Never made any effort |  |
+| 13 | Q1_6 | Practicing lifestyle habits for cancer prevention | What do you think about "practicing lifestyle habits to prevent cancer"? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) what efforts to make to prevent cancer<br>3 = (In the future) will probably not make any particular effort to prevent cancer<br>4 = (In the future) will actively practice lifestyle habits to prevent cancer |  |
+
+## Awareness of cancer prevention guidelines and sources of awareness
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 14 | Q2_1 | Awareness of cancer prevention guidelines | Are you aware that there are guidelines for preventing cancer? | 1 = Have heard of the guidelines but do not know the details<br>2 = Have heard of the guidelines and know their content<br>3 = Have never heard of the guidelines |  |
+| 15 | Q2_2_1 | Source of awareness of guidelines_print media | Through which channels did you hear about them? Please select all that apply. | 1 = Print media (newspapers, magazines, flyers, pamphlets, posters, etc.) | Multiple response |
+| 16 | Q2_2_2 | Source of awareness of guidelines_broadcast |  | 2 = Broadcast (TV, radio, etc.) | Multiple response |
+| 17 | Q2_2_3 | Source of awareness of guidelines_internet search |  | 3 = Internet search (portal sites, blogs, online communities, etc.) | Multiple response |
+| 18 | Q2_2_4 | Source of awareness of guidelines_social media (SNS) |  | 4 = Social media (YouTube, Twitter, Facebook, Line, etc.) | Multiple response |
+| 19 | Q2_2_5 | Source of awareness of guidelines_medical institution |  | 5 = Medical institution (notices in the institution, institution website, etc.) | Multiple response |
+| 20 | Q2_2_6 | Source of awareness of guidelines_expert |  | 6 = Expert (medical professional, medical institution staff, etc.) | Multiple response |
+| 21 | Q2_2_7 | Source of awareness of guidelines_people around you |  | 7 = People around you (family, relatives, friends, etc.) | Multiple response |
+| 22 | Q2_2_8 | Source of awareness of guidelines_other |  | 8 = Other | Multiple response |
+| 23 | Q2_2_8_etc | Source of awareness of guidelines_other (specified) |  | Free text |  |
+| 24 | Q2_3_1 | Guideline considered easy to follow_1st rank | Please name, in order, the three cancer prevention guidelines you think are easiest to follow. | 1 = Do not smoke, and avoid other people's tobacco smoke<br>2 = Eat plenty of vegetables and fruits, and eat a balanced meal with a varied diet<br>3 = Do not eat salty food, and do not eat charred food<br>4 = Avoid even one or two drinks a day to prevent cancer<br>5 = Walk or exercise to the point of sweating at least 30 minutes a day, 5 or more days a week<br>6 = Maintain a healthy weight suited to your body<br>7 = Get hepatitis B and cervical cancer vaccinations according to the vaccination guidelines<br>8 = Practice safe sex so as not to contract sexually transmitted infections<br>9 = Follow occupational health and safety rules at work to avoid exposure to carcinogens<br>10 = Get cancer screening regularly according to the early detection guidelines |  |
+| 25 | Q2_3_2 | Guideline considered easy to follow_2nd rank |  | Same as Q2_3_1 (guideline number 1–10) |  |
+| 26 | Q2_3_3 | Guideline considered easy to follow_3rd rank |  | Same as Q2_3_1 (guideline number 1–10) |  |
+| 27 | Q2_4_1 | Guideline considered difficult to follow_1st rank | Please name, in order, the three cancer prevention guidelines you think are hardest to follow. | Same as Q2_3_1 (guideline number 1–10) |  |
+| 28 | Q2_4_2 | Guideline considered difficult to follow_2nd rank |  | Same as Q2_3_1 (guideline number 1–10) |  |
+| 29 | Q2_4_3 | Guideline considered difficult to follow_3rd rank |  | Same as Q2_3_1 (guideline number 1–10) |  |
+| 30 | Q2_5_1 | Guideline considered not very helpful_1st rank | Please name, in order, the three cancer prevention guidelines you think are not very helpful for preventing cancer. | Same as Q2_3_1 (guideline number 1–10) |  |
+| 31 | Q2_5_2 | Guideline considered not very helpful_2nd rank |  | Same as Q2_3_1 (guideline number 1–10) |  |
+| 32 | Q2_5_3 | Guideline considered not very helpful_3rd rank |  | Same as Q2_3_1 (guideline number 1–10) |  |
+| 33 | Q2_6_1 | Item that should be included in the national guidelines_avoid exposure to air pollutants | The following items are included in cancer prevention guidelines abroad but are not currently included in Korea's cancer prevention guidelines. Please select all items you think should also be included in Korea's guidelines. | 1 = Avoid exposure to air pollutants (fine dust) | Multiple response |
+| 34 | Q2_6_2 | Item that should be included in the national guidelines_avoid excessive UV exposure |  | 2 = Avoid excessive UV exposure | Multiple response |
+| 35 | Q2_6_3 | Item that should be included in the national guidelines_avoid exposure to medical radiation |  | 3 = Avoid exposure to medical radiation | Multiple response |
+| 36 | Q2_6_4 | Item that should be included in the national guidelines_limit fast food and processed foods |  | 4 = Limit fast food and processed food | Multiple response |
+| 37 | Q2_6_5 | Item that should be included in the national guidelines_limit red meat |  | 5 = Limit red meat | Multiple response |
+| 38 | Q2_6_6 | Item that should be included in the national guidelines_limit processed meat |  | 6 = Limit processed meat | Multiple response |
+| 39 | Q2_6_7 | Item that should be included in the national guidelines_limit sugar-sweetened beverages |  | 7 = Limit sugar-sweetened beverages | Multiple response |
+| 40 | Q2_6_8 | Item that should be included in the national guidelines_eat plenty of whole grains and legumes |  | 8 = Eat plenty of whole grains and legumes | Multiple response |
+
+## Quitting smoking
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 41 | Q3_1 | Awareness that smoking can cause cancer | Do you think smoking causes cancer? | 1 = Yes<br>2 = No |  |
+| 42 | Q3_2 | Smoking experience | Have you ever smoked? | 1 = Never smoked<br>2 = Smoked in the past only<br>3 = Currently smoke |  |
+| 43 | Q3_A2_1 | Amount smoked (past) | Smoked in the past only [average per day] | Numeric: cigarettes per day (average) |  |
+| 44 | Q3_A2_2 | Duration of smoking (past) | Smoked in the past only | Numeric: years of smoking |  |
+| 45 | Q3_A2_3 | Duration of smoking cessation | Smoked in the past only [time since quitting] | Numeric: years since quitting |  |
+| 46 | Q3_B2_1 | Amount smoked (current) | Currently smoke [average per day] | Numeric: cigarettes per day (average) |  |
+| 47 | Q3_B2_2 | Duration of smoking (current) | Currently smoke | Numeric: years of smoking |  |
+| 48 | Q3_3 | Not smoking in order to prevent cancer | Is the reason you do not smoke to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 49 | Q3_4 | Attempting to quit and barriers to quitting | Which of the following is a barrier to your attempting to quit smoking or to quitting? (Answer only one) | 1 = Do not feel any harm to health from smoking<br>2 = Do not know effective ways to quit<br>3 = Fear of side effects of quitting (stress, weight gain, withdrawal symptoms, etc.)<br>4 = Hard to refuse temptations to smoke from people around me<br>5 = Other |  |
+| 50 | Q3_4_5_etc | Attempting to quit and barriers to quitting_other (specified) |  | Free text |  |
+| 51 | Q3_5 | Recommendation to quit smoking for cancer prevention | What do you think about the recommendation to quit smoking in order to prevent cancer? | 1 = Have not given it any particular thought<br>2 = Have not decided whether to quit smoking<br>3 = Probably will not make any particular effort to quit smoking<br>4 = Will quit smoking |  |
+| 52 | Q3_6_1 | Tobacco product mainly used_conventional cigarettes | Which of the various tobacco products do you currently mainly use? (Multiple selection allowed) | 1 = Conventional cigarettes | Multiple response |
+| 53 | Q3_6_2 | Tobacco product mainly used_heated tobacco (cigarette-type e-cigarettes) |  | 2 = Heated tobacco (cigarette-type e-cigarettes: IQOS, glo, lil, etc.) | Multiple response |
+| 54 | Q3_6_3 | Tobacco product mainly used_liquid e-cigarettes |  | 3 = Liquid e-cigarettes | Multiple response |
+| 55 | Q3_7 | Which is more harmful for cancer prevention: conventional cigarettes or e-cigarettes | Which do you think is more harmful in terms of cancer prevention: conventional cigarettes or e-cigarettes? | 1 = Conventional cigarettes are more harmful<br>2 = E-cigarettes are more harmful<br>3 = Both are equally harmful |  |
+
+## Eating vegetables and fruits
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 56 | Q4_1 | Awareness that vegetables and fruits help prevent cancer | Do you think eating vegetables and fruits helps prevent cancer? | 1 = Yes<br>2 = No |  |
+| 57 | Q4_2 | Current status of sufficient vegetable and fruit intake | Do you eat enough vegetables and fruits? | 1 = Yes<br>2 = No |  |
+| 58 | Q4_3 | Reason for sufficient vegetable and fruit intake | Is the reason you eat enough vegetables and fruits to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 59 | Q4_4 | Reason for not eating enough vegetables and fruits | Why do you not eat enough vegetables or fruits? (Answer only one) | 1 = Do not feel the need to eat vegetables or fruits<br>2 = Do not like vegetables and fruits<br>3 = Family does not prepare vegetables and fruits well<br>4 = Cannot afford it<br>5 = Intake is limited at restaurants for lunch and company dinners, including frequent eating out (office workers)<br>6 = Other |  |
+| 60 | Q4_4_6_etc | Reason for not eating enough vegetables and fruits_other (specified) |  | Free text |  |
+| 61 | Q4_5 | Recommendation to eat enough vegetables and fruits for cancer prevention | What do you think about the recommendation to eat enough vegetables and fruits in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to eat enough vegetables and fruits<br>3 = (In the future) will probably not make any particular effort to eat enough vegetables and fruits<br>4 = (In the future) will eat enough vegetables and fruits |  |
+
+## Eating a balanced diet
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 62 | Q5_1 | Awareness that a balanced diet helps prevent cancer | Do you think eating a balanced meal with a varied diet helps prevent cancer? | 1 = Yes<br>2 = No |  |
+| 63 | Q5_2 | Current status of eating a balanced diet | Do you eat a balanced meal with a varied diet? | 1 = Yes<br>2 = No |  |
+| 64 | Q5_3 | Eating a balanced diet in order to prevent cancer | Is the reason you eat a balanced meal with a varied diet to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 65 | Q5_4 | Reason for not eating a balanced diet | Why do you not eat a balanced meal with a varied diet? (Answer only one) | 1 = Do not feel the need for a varied diet and balanced meals<br>2 = Meals at home are not varied<br>3 = Because of my picky eating habits<br>4 = Cannot afford it<br>5 = Intake is limited at restaurants for lunch and company dinners, including frequent eating out (office workers)<br>6 = Other |  |
+| 66 | Q5_4_6_etc | Reason for not eating a balanced diet_other (specified) |  | Free text |  |
+| 67 | Q5_5 | Recommendation to eat a balanced diet for cancer prevention | What do you think about the recommendation to eat a balanced meal with a varied diet in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to eat a balanced meal with a varied diet<br>3 = (In the future) will probably not make any particular effort to eat a balanced meal with a varied diet<br>4 = (In the future) will eat a balanced meal with a varied diet |  |
+
+## Avoiding salty food
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 68 | Q6_1 | Awareness that salty food can cause cancer | Do you think salty food can cause cancer? | 1 = Yes<br>2 = No |  |
+| 69 | Q6_2 | Whether salty food is limited | Do you limit your intake of salty food? | 1 = Yes<br>2 = No |  |
+| 70 | Q6_3 | Limiting salty food in order to prevent cancer | Is the reason you limit salty food to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 71 | Q6_4 | Reason for not limiting salty food | If you do not limit salty food, what is the reason? (Answer only one) | 1 = Do not feel the need to limit salty food<br>2 = Like salty-tasting food<br>3 = Habitually eat salty food<br>4 = Mostly eat out or do not cook myself<br>5 = Other |  |
+| 72 | Q6_4_5_etc | Reason for not limiting salty food_other (specified) |  | Free text |  |
+| 73 | Q6_5 | Recommendation to limit salty food for cancer prevention | What do you think about the recommendation not to eat salty food in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to limit salty food<br>3 = (In the future) will probably not make any particular effort to limit salty food<br>4 = (In the future) will not eat salty food |  |
+
+## Avoiding charred food
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 74 | Q7_1 | Awareness that charred food can cause cancer | Do you think charred food can cause cancer? | 1 = Yes<br>2 = No |  |
+| 75 | Q7_2 | Whether charred food is avoided | Do you avoid charred food? | 1 = Yes<br>2 = No |  |
+| 76 | Q7_3 | Avoiding charred food in order to prevent cancer | Is the reason you avoid charred food to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 77 | Q7_4 | Reason for not avoiding charred food | Why do you not avoid charred food? (Answer only one) | 1 = Moderately charred food tastes better when grilled over charcoal or grilled myself<br>2 = Too much trouble to cut off the charred parts before eating<br>3 = Hard to avoid burning food because of the cooking method<br>4 = Other |  |
+| 78 | Q7_4_4_etc | Reason for not avoiding charred food_other (specified) |  | Free text |  |
+| 79 | Q7_5 | Recommendation to avoid charred food for cancer prevention | What do you think about the recommendation not to eat charred food in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to avoid charred food<br>3 = (In the future) will probably not make any particular effort to avoid charred food<br>4 = (In the future) will not eat charred food |  |
+
+## Avoiding alcohol, even one or two drinks a day
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 80 | Q8_1 | Awareness that alcohol can cause cancer | Do you think drinking alcohol can cause cancer? | 1 = Yes<br>2 = No |  |
+| 81 | Q8_2 | Alcohol drinking status | Do you not drink alcohol? | 1 = Yes (do not drink)<br>2 = No (drink) |  |
+| 82 | Q8_2_2_etc | Alcohol drinking status_average daily alcohol intake (standard drinks) |  | Numeric: standard drinks per day (for those who drink) |  |
+| 83 | Q8_3 | Limiting alcohol in order to prevent cancer | Is the reason you limit alcohol to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 84 | Q8_4 | Reason for not limiting alcohol | Why do you not limit your alcohol consumption? (Answer only one) | 1 = Enjoy drinking / like drinking<br>2 = Hard to refuse alcohol at drinking occasions<br>3 = Drinking a lot does not interfere with daily life<br>4 = Do not feel the need<br>5 = Other |  |
+| 85 | Q8_4_5_etc | Reason for not limiting alcohol_other reason (specified) |  | Free text |  |
+| 86 | Q8_5 | Recommendation to avoid even light drinking for cancer prevention | What do you think about the recommendation to avoid even one or two drinks a day in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to limit drinking<br>3 = (In the future) will probably not make any particular effort to limit drinking<br>4 = (In the future) will limit drinking |  |
+| 87 | Q8_6 | Awareness that alcohol is a Group 1 carcinogen | Are you aware that alcohol is a Group 1 carcinogen? | 1 = Yes, I know<br>2 = No, I do not know |  |
+
+## Exercising at least 30 minutes a day, 5 days a week
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 88 | Q9_1 | Awareness that exercising at least 30 minutes a day, 5 days a week helps prevent cancer | Including all physical activity and exercise in daily life, do you think walking or exercising to the point of sweating for at least 30 minutes a day, 5 days a week, helps prevent cancer? | 1 = Yes<br>2 = No |  |
+| 89 | Q9_2 | Whether exercising at least 30 minutes a day, 5 days a week | Including all physical activity and exercise in daily life, do you walk or exercise to the point of sweating for at least 30 minutes a day, 5 days a week? | 1 = Yes<br>2 = No |  |
+| 90 | Q9_3 | Exercising at least 30 minutes a day, 5 days a week in order to prevent cancer | Including all physical activity and exercise in daily life, is the reason you walk or exercise to the point of sweating for at least 30 minutes a day, 5 days a week, to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 91 | Q9_4 | Reason for not exercising at least 30 minutes a day, 5 days a week | Why are you unable to walk or exercise to the point of sweating for at least 30 minutes a day, 5 days a week? (Answer only one) | 1 = Do not feel the need<br>2 = Too busy / no time<br>3 = Physically unwell<br>4 = Do not like exercising<br>5 = No place or facilities to exercise<br>6 = Other |  |
+| 92 | Q9_4_6_etc | Reason for not exercising at least 30 minutes a day, 5 days a week_other (specified) |  | Free text |  |
+| 93 | Q9_5 | Recommendation to exercise at least 30 minutes a day, 5 days a week for cancer prevention | What do you think about the recommendation to walk or exercise to the point of sweating for at least 30 minutes a day, 5 days a week, in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to exercise<br>3 = (In the future) will probably not make any particular effort to exercise<br>4 = (In the future) will exercise |  |
+
+## Maintaining a healthy weight
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 94 | Q10_1 | Maintaining an appropriate weight for cancer prevention | Do you think maintaining an appropriate weight helps prevent cancer? | 1 = Yes<br>2 = No |  |
+| 95 | Q10_2 | Whether an appropriate weight is maintained | Are you maintaining an appropriate weight? | 1 = Yes<br>2 = No |  |
+| 96 | Q10_3 | Maintaining an appropriate weight for cancer prevention | Is the reason you maintain an appropriate weight to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 97 | Q10_4 | Reason for not maintaining an appropriate weight | Why are you unable to maintain an appropriate weight? (Answer only one) | 1 = Do not feel the need to manage weight<br>2 = Cannot control diet because of a strong appetite / frequent eating out<br>3 = No time to exercise<br>4 = Do not know how to manage weight<br>5 = Repeated yo-yo effect (failed weight control)<br>6 = Other |  |
+| 98 | Q10_4_6_etc | Reason for not maintaining an appropriate weight_other (specified) |  | Free text |  |
+| 99 | Q10_5 | Recommendation to maintain an appropriate weight for cancer prevention | What do you think about the recommendation to maintain an appropriate weight in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to manage weight<br>3 = (In the future) will probably not make any particular effort to manage weight<br>4 = (In the future) will manage weight |  |
+| 100 | Q10_6 | Height | What is your height? (Please enter your height without shoes.) | Numeric: height in cm |  |
+| 101 | Q10_7 | Weight | What is your weight? (Please enter your weight without heavy clothing.) | Numeric: weight in kg |  |
+
+## Hepatitis B vaccination
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 102 | Q11_1 | Awareness that chronic hepatitis B can cause liver cancer | Do you think chronic hepatitis B can cause liver cancer? | 1 = Yes<br>2 = No |  |
+| 103 | Q11_2 | Hepatitis B vaccination status | Have you been vaccinated against hepatitis B? | 1 = Yes<br>2 = No<br>3 = Don't know |  |
+| 104 | Q11_3 | Hepatitis B vaccination for cancer prevention | Is the reason you were vaccinated against hepatitis B to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 105 | Q11_4 | Reason for not being vaccinated against hepatitis B | Why have you not been vaccinated against hepatitis B so far? (Answer only one) | 1 = Did not know whether I am eligible for hepatitis B vaccination<br>2 = Do not feel the need for hepatitis B vaccination<br>3 = Do not know how (when, where) to get vaccinated<br>4 = I am a hepatitis B virus carrier<br>5 = Cannot afford it<br>6 = Other |  |
+| 106 | Q11_4_6_etc | Reason for not being vaccinated against hepatitis B_other reason (specified) |  | Free text |  |
+| 107 | Q11_5 | Recommendation to get hepatitis B vaccination for liver cancer prevention | What do you think about the recommendation to get vaccinated against hepatitis B in order to prevent liver cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to get the hepatitis B vaccine<br>3 = (In the future) will probably not make any particular effort to get the hepatitis B vaccine<br>4 = (In the future) will get the hepatitis B vaccine |  |
+| 108 | Q11_6 | Belief about chronic hepatitis C causing liver cancer | Do you think chronic hepatitis C can cause liver cancer? | 1 = Yes<br>2 = No<br>3 = Don't know |  |
+
+## HPV (cervical cancer) vaccination
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 109 | Q12_1 | Awareness that human papillomavirus (HPV) infection can cause cervical cancer | Are you aware that human papillomavirus (HPV) infection causes cervical cancer? | 1 = Yes<br>2 = No |  |
+| 110 | Q12_2 | Awareness that HPV vaccination can prevent cervical cancer | Are you aware that cervical cancer can be prevented by human papillomavirus (HPV) vaccination? | 1 = Yes<br>2 = No |  |
+| 111 | Q12_3 | HPV vaccination status | Have you received the human papillomavirus (HPV) vaccine (also called the cervical cancer vaccine)? | 1 = Yes<br>2 = No<br>3 = Don't know |  |
+| 112 | Q12_4 | HPV vaccination for cancer prevention | Is the reason you received the human papillomavirus (HPV) vaccine to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 113 | Q12_5_1 | Reason for not receiving HPV vaccine_did not know the vaccine existed | Why have you not received the human papillomavirus (HPV) vaccine? (Multiple answers allowed) | 1 = Did not know that an HPV vaccine exists | Multiple response |
+| 114 | Q12_5_2 | Reason for not receiving HPV vaccine_did not feel the need |  | 2 = Did not feel the need for vaccination | Multiple response |
+| 115 | Q12_5_3 | Reason for not receiving HPV vaccine_concern about side effects |  | 3 = Afraid of side effects of vaccination | Multiple response |
+| 116 | Q12_5_4 | Reason for not receiving HPV vaccine_distrust of vaccine effectiveness |  | 4 = Could not trust the effectiveness of vaccination | Multiple response |
+| 117 | Q12_5_5 | Reason for not receiving HPV vaccine_cost burden |  | 5 = Too expensive | Multiple response |
+| 118 | Q12_5_6 | Reason for not receiving HPV vaccine_other |  | 6 = Other | Multiple response |
+| 119 | Q12_5_6_etc | Reason for not receiving HPV vaccine_other (specified) |  | Free text |  |
+| 120 | Q12_6 | Recommendation to get HPV vaccination for cancer prevention | What do you think about the recommendation to receive the human papillomavirus (HPV) vaccine in order to prevent cervical cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to get the HPV vaccine<br>3 = (In the future) will probably not make any particular effort to get the HPV vaccine<br>4 = (In the future) will get the HPV vaccine |  |
+| 121 | Q12_7 | Priority group for expanding free HPV vaccination | Currently, free HPV vaccination is available only to female adolescents aged 12–17 and low-income women aged 18–26. If free vaccination were expanded, who do you think should be prioritized? | 1 = Keep as is, no need to expand<br>2 = Adult women<br>3 = Adolescent boys<br>4 = Adult men |  |
+
+## Getting regular cancer screening
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 122 | Q13_1 | Cancer screening increasing the chance of cure | Do you think that getting cancer screening can detect cancer early and increase the chance of a cure? | 1 = Yes<br>2 = No |  |
+| 123 | Q13_2 | Cancer screening status | Have you ever had a cancer screening? | 1 = Yes<br>2 = No |  |
+| 124 | Q13_3 | Reason for cancer screening | Is the reason you had a cancer screening to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 125 | Q13_4 | Reason for not having cancer screening | Why have you not had a cancer screening? (Answer only one) | 1 = Have never heard of screening (e.g., did not know)<br>2 = Confident about my health (e.g., no symptoms)<br>3 = No time<br>4 = Cannot afford it<br>5 = The screening process is hard and frightening<br>6 = Afraid cancer will be found<br>7 = Think screening would not be effective<br>8 = Screening facility is far away (e.g., none nearby)<br>9 = Not eligible for the national cancer screening program<br>10 = Other |  |
+| 126 | Q13_4_10_etc | Reason for not having cancer screening_other (specified) |  | Free text |  |
+| 127 | Q13_5 | Recommendation to get cancer screening for cancer prevention | What do you think about the recommendation to get cancer screening in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to get cancer screening<br>3 = (In the future) will probably not make any particular effort to get cancer screening<br>4 = (In the future) will get cancer screening |  |
+
+## Sexual life
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 128 | Q14_1 | Awareness that infections transmitted through sexual contact can cause cancer | Do you think some infectious diseases that can be contracted through sexual contact can cause cancer? | 1 = Yes<br>2 = No |  |
+| 129 | Q14_2 | Whether practicing safe sex | Do you practice safe sex (including not being sexually active)? | 1 = Yes<br>2 = No |  |
+| 130 | Q14_3 | Practicing safe sex for cancer prevention | Is the reason you practice safe sex (including not being sexually active) to prevent cancer? | 1 = Yes<br>2 = No |  |
+| 131 | Q14_4 | Recommendation to practice safe sex for cancer prevention | What do you think about the recommendation to practice safe sex in order to prevent cancer? | 1 = Have not given it any particular thought (so far)<br>2 = (In the future) whether to practice safe sex<br>3 = (In the future) will probably not make any particular effort to practice safe sex<br>4 = (In the future) will practice safe sex |  |
+
+## Background (demographic) questions
+
+| No | Variable | Label | Question | Answer values | Note |
+|--|--|---|------|--------|:---|
+| 132 | DQ1 | Occupation | What is your occupation? | 1 = Farming / forestry / fishing worker<br>2 = Self-employed (owner of a business with 9 or fewer employees, family worker, carpentry shop owner, private taxi driver, etc.)<br>3 = Sales / service worker (shop clerk, salesperson, etc.)<br>4 = Skilled / craft worker (driver, lathe operator / carpenter, skilled worker, etc.)<br>5 = General manual labor (civil engineering site work, cleaning, security guard, physical labor, etc.)<br>6 = Office / technical worker (company office worker, technician, elementary/middle/high school teacher, ship navigator, etc.)<br>7 = Manager / administrator (senior civil servant of grade 5 or above, vice principal, company department head or above, etc.)<br>8 = Professional / freelancer (university professor, doctor, lawyer, artist, clergy, etc.)<br>9 = Full-time homemaker<br>10 = Student<br>11 = Unemployed<br>12 = Other |  |
+| 133 | DQ1_12_etc | Occupation_other (specified) |  | Free text |  |
+| 134 | DQ2 | Marital status | What is your marital status? | 1 = Never married<br>2 = Married<br>3 = Divorced<br>4 = Separated<br>5 = Widowed |  |
+| 135 | DQ3 | Education level | What is your level of education? (Dropping out does not count as graduating.) | 1 = Elementary school or below<br>2 = Middle school<br>3 = High school<br>4 = College/university (including enrolled / on leave)<br>5 = Graduate school or above |  |
+| 136 | DQ4 | Household income | What is your household's average total monthly income, including bonuses and interest income, for all family members combined? | 1 = 0.99 million KRW or less<br>2 = 1.00–1.99 million KRW<br>3 = 2.00–2.99 million KRW<br>4 = 3.00–3.99 million KRW<br>5 = 4.00–4.99 million KRW<br>6 = 5.00–5.99 million KRW<br>7 = 6.00–6.99 million KRW<br>8 = 7.00 million KRW or more |  |
