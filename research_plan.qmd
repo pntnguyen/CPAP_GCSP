@@ -423,6 +423,59 @@ Based on what type of data we have
 
 Derive contextual indicators of medical provider quality and assess their relative importance along with the individual utilization of antenatal care (ANC) and institutional births with a skilled birth attendant (SBA) in India using a multilevel framework
 
+Outcome variables:
+
+  - neonatal mortality (i.e., deaths within the first month)
+  
+  - infant mortality (i.e., deaths within one year since birth)
+  
+  - under-five child mortality (i.e., deaths within the first five years)
+
+Individual access to care:
+
+  - binary variable indicating whether the mother had <4 or≥ 4 ANC visits
+  
+  - binary variable was coded indicating whether the mother had birth delivery in an institutional setting with a SBA (doctor, nurse, or midwife).
+
+Contextual provider quality 
+
+  - Indicators for **outcome-specific provider quality** (low versus high) were derived for each **district and state** by regression model with both predictor and outcome variables aggregated at higher levels (districts and states). Positive residuals = lower provider quality, negative residuals = high provider quality. 
+
+Methodology
+
+  - model 1: null model
+  
+  - model 2: individual covariates (sex, birth order, birth interval, delivery method, maternal age, marital status, maternal education, maternal age at marriage, tetanus injection, household wealth)
+
+  - model 3: individual covariates and ANC and SBA
+  
+  - model 4: 
+  
+    - model 4A: model 3 + the fixed effect of provider quality indicators derived from ANC for districts 
+    
+    - model 4B: model 3 + the fixed effect of provider quality indicators derived from ANC for states 
+    
+  - model 5
+  
+    - model 5A: model 3 + the fixed effect of provider quality indicators derived from SBA for districts 
+    
+    - model 5B: model 3 + the fixed effect of provider quality indicators derived from SBA for states 
+  
+Results
+
+  - most variation in neonatal mortality attributed to the community level (Variance Partitioning Coefficient
+[VPC]: 40.3%)
+
+  - several individual-level covariates were significantly associated with increased odds of neonatal mortality
+  
+  - Failure to meet the WHO recommended 4 ANC visits was associated with 12% increased odds of neonatal mortality
+  
+  - Absence of SBA at delivery and births in non-institutional settings was associated with 4% increased odds of neonatal mortality
+  
+  - districts and states with low provider quality based on ANC were associated with almost 70% and 50% increased odds of neonatal mortality
+  
+  - districts and states with low provider quality based on SBA were associated with almost 80% and 60% increased odds of neonatal mortality
+
 **Longitudinal data**:
 
   - We may conduct causal mediation analysis using g-computation in longitudinal settings with time-varying exposure, mediators, and confounders on the success quitting smoking.
