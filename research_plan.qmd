@@ -1,0 +1,430 @@
+# Research plan
+
+## Literature review
+
+### Factors associated with successful smoking cessation
+
+**What factors have been identified in previous studies? For example, nicotine dependence, socioeconomic characteristics, depression, e-cigarette use, utilization of smoking cessation services, and exposure to smoking cessation programs or campaigns.**
+
+[@vangeli2011predictors]
+
+-   A systematic review of 8 articles: 4 national surveys (UK, Japan, China), 3 multi-country papers (United States, United Kingdom, Canada, France and Spain, Malaysia and Thailand) ( Canada, the United States, United Kingdom and Australia)
+
+| Subsection | Predictors of quit attempts | Predictors of quit attempt success |
+|:-----------|:----------------------------|:-----------------------------------|
+| **Demographics and physical variables** | • No association between **gender, marital status, education level** and making a quit attempt (pooled analysis)<br>• None of the other studies examining income or social class found an association<br>• No association with quit attempts in the two studies examining a smoking ban at work | • No association between **gender, marital status, education level** and quit attempt success (pooled analysis)<br>• Older smokers were more likely to be successful (3/8 studies) |
+| **Current smoking** | • Higher dependence (FTND score) was associated negatively with making a quit attempt (4/6 studies)<br>• Cigarettes per day (CPD): negative association in 5/6 studies | • Higher dependence was associated with failure of quit attempts in all 6 studies examining dependence<br>• The more cigarettes smoked, the less likely the attempt was to succeed (5 studies) |
+| **Smoking and quitting history characteristics** | • Pooled analysis: those who made a quit attempt in the previous year were more than twice as likely to make a subsequent attempt | • Negative association with having made a previous quit attempt (3 studies)<br>• Longest time off smoking of more than 6 months was positively associated with success in two studies (compared with those who had not made a quit attempt), but there was no association in the pooled analysis |
+| **Desire to quit** | • Higher motivation was associated positively with making a quit attempt (4 studies) | • Higher motivation was associated negatively with success in some studies; other studies found no association |
+| **Evaluations of smoking and quitting** | • A negative opinion of smoking predicted a quit attempt<br>• Greater enjoyment of smoking was associated negatively with a quit attempt<br>• Concern about the health effects of smoking was predictive<br>• Expecting that stopping would benefit health and/or bring other gains was positively associated with a quit attempt | • No association with opinions of smoking, worries about health effects, or enjoyment of smoking<br>• Expecting that stopping in the next 6 months would be beneficial was associated negatively with success in the only western study to examine it |
+| **Confidence in quitting** | • Higher confidence in quitting predicted a quit attempt | • Smokers who were very or extremely sure they would succeed had 2 to 3 times greater odds of success than those who were not at all sure |
+
+: Predictors of quit attempts and quit attempt success {#tbl-predictors}
+
+[@hock2023covariates]
+
+  - Undertook a systematic review of studies that used a statistical model to explore what covariates are associated with quitting success
+  
+  - Searched for studies statistically assessing quit attempts in three contexts: 
+  
+    - (a) the general population instigated in any setting within the UK
+    
+    - (b) people with a mental health condition instigated in any setting and in any country
+    
+    - (c) initiated within a secondary acute or mental health service in any country.    
+
+  - 29 studies were included in the synthesis (21 studies relating to the UK general population, six studies relating to mental health in the UK or Canada, 2 studies relating to secondary care in the UK or Canada)
+
+| Domain | Covariate | Findings |
+|:---|:----|:---------|
+| **Participant characteristics** | Demographics | Variables examined: age, sex, ethnicity, socioeconomic characteristics, relationship status, cohabitation and social network situation |
+| | Physical health | Higher odds of quitting success for patients with low (vs. moderate or high) cardiovascular risk and for patients with fewer comorbidities (1 study) |
+| | Mental health | Lower odds of quitting success for people with:<br>• a primary diagnosis of **anxiety disorder** vs. no disorder<br>• current or recent **depression** vs. no history of depression<br>• history of **opiate abuse** vs. history of **alcohol abuse**<br>• history of **alcohol, opiate and marijuana abuse** vs. no history of **substance abuse** |
+| **Tobacco smoking variables** | Current and previous cigarette consumption | • Lower pre-pregnancy cigarette consumption was associated with higher odds of pregnant women quitting<br>• No relationship for daily cigarette consumption or age at smoking initiation |
+| | Carbon monoxide (CO) level | Lower CO levels when the quit attempt began were associated with higher odds of quitting success |
+| | Level of nicotine dependence | Higher odds of quitting in smokers with lower nicotine dependence (9 studies) |
+| | Motivation to quit | Higher odds of quitting for smokers who reported determination or motivation to quit |
+| | Quitting characteristics | • Higher odds of quitting among smokers with more previous quit attempts or longer previous abstinence (previously quit for ≥3 months, ≥2 quit attempts in the past 6 months, longer abstinence at the last attempt)<br>• No relationship between success and time since the start of the last unsuccessful attempt (1 study) |
+| **Intervention characteristics** | Reduction in amount smoked and/or temporary abstinence before quitting | Higher odds of quitting for smokers who **reduced the amount they smoked** before attempting to quit |
+| | Behavioural support type, setting and mode of contact | • Higher odds of quitting for smokers who used a **smoking cessation clinic** or websites (vs. no support)<br>• Higher odds for smokers who used **pharmacotherapy** alongside **help** from a health professional or specialist cessation advisor (vs. no support)<br>• Smokers who received support in specialist clinics (result not stated) |
+| | Treatment duration and number of contacts | Higher odds of quitting success with a greater number of contacts with a stop smoking advisor |
+| | Pharmacological aids | • Higher odds of quitting for smokers who used nicotine replacement therapy (NRT)<br>• Higher odds with e-cigarettes (vs. no e-cigarettes, no cessation aid, and NRT)<br>• Higher odds with greater compliance with recommended pharmacotherapy guidelines |
+
+: Covariates of success in quitting tobacco smoking {#tbl-covariates}
+
+[@kundu2024overview]
+
+Included 11 studies which summarized factors possibly influencing smoking
+cessation related behaviors including intention to quit smoking, quit attempts and smoking
+abstinence among young people between age 10 and 35 years
+
+  - young people aged ~10–29 years and who had lower **level of nicotine dependence and cravings**, had a higher
+chance of quitting smoking
+
+  - **high frequency and intensity** of smoking act as barriers for smoking abstinence/quit attempts       
+
+    => ‘cutting down’ on smoking or gradual cessation approach targets lowering level of nicotine dependence and
+increasing probability of quitting  
+  
+  - **stress and depression** act as barriers of quitting
+  
+  -  integrating smoking cessation with the **treatment of mental health conditions** might be a beneficial intervention approach for young people
+  
+  - **not using alcohol or other substances** were seen to increase probability of smoking abstinence/quit attempts
+  
+  - **higher self-confidence** in quitting, good **self-management skills**, and being less susceptible to smoking increased probabilities of smoking abstinence/quit attempts among ~10–29 years age young people
+  
+  - **peer smoking or family or household smoking** also may act as barriers for smoking abstinence/quit attempts
+  
+    => suggests that group therapy-based smoking cessation programs might work better
+than individual interventions  
+  
+  - **tobacco price** increase, restricting cigarette availability, and ban on cigarette coupons
+  
+  - attaining **higher education** was found to promote smoking abstinence/quit attempts
+  
+  - being **married/living** with partners, pregnancy/becoming parent were positive ‘probable’ predictors, **‘living with children’** was negative ‘possible’ predictors
+  
+::: {.callout-note title = "Summary"}
+
+| Factor group | Predictors of quit attempts | Predictors of quit success |
+|:-------------|:----------------------------|:---------------------------|
+| **Age** | Not reported | Older age: more likely to succeed (3/8 studies) |
+| **Gender, marital status, education** | No association (pooled) | No association (pooled) |
+| **Income, social class, workplace smoking ban** | No association | Not reported |
+| **Higher education** | Not reported | Promotes abstinence and quit attempts in young people |
+| **Partner, pregnancy, children** | Not reported | Married or living with a partner, pregnancy or parenthood: positive "probable" predictors<br>Living with children: negative "possible" predictor |
+| **Physical health** | Not reported | Low cardiovascular risk and fewer comorbidities: higher odds (1 study) |
+| **Mental health** | Not reported | Lower odds with anxiety disorder, depression, or opiate, alcohol or marijuana abuse |
+| **Stress, depression, alcohol or substance use** | Not reported | Stress and depression are barriers<br>Not using alcohol or other substances increases the chance of quitting |
+| **Nicotine dependence** | Higher dependence (FTND): lower chance (4/6 studies) | Lower dependence: higher odds (9 studies)<br>Higher dependence: failure in all 6 studies |
+| **Cigarettes per day** | More cigarettes: lower chance (5/6 studies) | More cigarettes: less likely to succeed (5 studies)<br>No relationship for daily consumption or age at initiation |
+| **Smoking intensity and frequency** | Not reported | Barrier to abstinence; cutting down may help |
+| **Pre-pregnancy consumption, CO level** | Not reported | Lower consumption and lower CO at the start of the attempt: higher odds |
+| **Quit history** | Attempt in the previous year: more than twice as likely to try again | Mixed<br>Previous attempts and longer past abstinence: higher odds<br>Previous attempt negative in 3 studies<br>Abstinence over 6 months positive in 2 studies, not in pooled analysis<br>No relationship with time since last failed attempt |
+| **Motivation** | Higher motivation: positive (4 studies) | Mixed<br>Determination or motivation: higher odds<br>Negative association or none in other studies |
+| **Attitudes and beliefs about smoking** | Negative opinion of smoking, less enjoyment, health concerns, expecting health or other benefits: more attempts | No association with opinions, health worries, or enjoyment<br>Expecting benefit within 6 months: negative (1 western study) |
+| **Confidence and self-management** | Higher confidence: more attempts | Very or extremely sure: 2 to 3 times greater odds<br>Higher self-confidence, good self-management, lower susceptibility help |
+| **Peer, family or household smoking** | Barrier | Barrier |
+| **Tobacco policy** | Higher tobacco price, restricted availability, ban on cigarette coupons (direction not stated in notes) | Not reported |
+| **Quitting approach** | Not reported | Reducing the amount smoked before quitting: higher odds |
+| **Support** | Not reported | Cessation clinics, websites, pharmacotherapy plus advisor help (vs. no support)<br>More contacts with an advisor |
+| **Pharmacological aids** | Not reported | NRT, e-cigarettes (vs. none, no aid, or NRT), better adherence to pharmacotherapy guidelines |
+
+: Summary of factors associated with quit attempts and quit success {#tbl-summary tbl-colwidths="[22,34,44]"}
+
+:::  
+  
+  
+### Socioeconomic and geographic disparities
+
+#### Socieconomic inequalities
+
+**Is there evidence of disparities in smoking cessation success across socioeconomic groups or geographic areas?**
+
+[@avila2022socioeconomic]
+
+The Health and Retirement Study (HRS) is a nationally representative longitudinal, biennial survey of individuals 50 and older in the U.S. and their spouses
+
+Aim: assess how socioeconomic status (SES) over the life course impacts smoking cessation among older adult smokers in the U.S
+
+The main exposure variable was both childhood and adulthood SES
+
+  - The childhood SES factor: level of maternal and paternal education, father’s occupation, being born in southern U.S. states, and if the subject grew up in a rural area
+  
+  - The adulthood SES variables: respondent’s educational attainment, occupation of longest job, labor force status, household income and household wealth
+
+  => operationalized childhood and adulthood SES as latent factors using **full-information maximum likelihood confirmatory factor analysis (CFA)**
+  
+Life course SES was operationalized into 4 categories to reflect social mobility: 
+  
+  - persistent low SES (low child SES, low adult SES)
+  
+  - low child SES, high adult SES (i.e., upward mobility)
+  
+  - high child SES, low adult SES (i.e., downward mobility)
+  
+  - persistent high SES (high child SES, high adult SES)  
+
+Fixed covariates: birth cohort, sex, race/ethnicity
+
+Time-varying covariates: age, marital status,  type of health insurance, doctor visit in the past 12 months, number of cigarettes smoked per day and comorbidities. Death as reason for loss to follow-up (yes vs no) and number of waves completed were also included as time-varying covariates.
+
+Statistical model
+
+  - **An unweighted multilevel mixed-effects logistic regression model** with a random intercept was estimated to test the **effect** of life course SES on smoking cessation over time
+
+  - The model was adjusted for life course SES, age centered at 65 years old, the interaction between life course SES and age, sex, race/ethnicity, marital status, health insurance, visit to the doctor in the past 12 months, number of cigarettes smoked per day, comorbidities, number of waves, death, and birth cohort
+
+Findings
+
+  - Those with persistent low SES, upward and downward SES mobility were less likely to quit than those with persistent high SES. However, this association was only significant over time for those with persistent low SES or downward mobility compared to those with persistent high SES
+
+  - low adult SES may continue to impact smoking cessation over time as lower income, education, wealth, occupation and employment status in adulthood are associated with reduced opportunities for access to tobacco cessation treatment and advice to quit, and poorer health literacy
+  
+  - lower probability to quit at age 65 for those with persistent low SES, upward and downward SES mobility compared to those with persistent high SES
+
+  - individuals who had upward social mobility from low child to high adult SES were still significantly less likely to quit than those with persistent high SES
+  
+  - majority of the **older smoker population** had persistent high SES, followed by downward mobility, persistent low, and upward mobility
+  
+  - older adults of more recent birth cohorts are more likely to quit smoking
+
+=>  it may also be important to develop interventions that target these disparities to help ‘heal the scar’ of childhood poverty on late-life health 
+
+=> After identifying potential mechanisms underlying the observed disparities, researchers may seek to examine whether extant or novel smoking cessation interventions (e.g., nicotine replacement therapies, Varenicline, contingency management, and other behavioral approaches) demonstrate particular effectiveness in increasing smoking cessation for individuals with low childhood SES.
+  
+[@bosdriesz2015socioeconomic]
+
+  - Aim
+
+Provide an overview of long-term trends of socioeconomic inequalities in smoking cessation in Europe. Data of 11 EU member states from 12 Eurobarometer surveys taken at irregular intervals from 1987 to 2012
+
+  - Variables
+
+Main outcome variable, the quit ratio, was composed of current and former smokers
+
+Two measures of SES: education and occupation 
+
+  - ( Education was measured as the age when finished or left full-time education (low≤15 years, middle=16–19 years, high≥20 years))
+  
+  - Occupational class was combined into four groups: manual (farmers, fishermen, manual workers), non-manual (office employees, white collar workers, professionals, management), self-employed (business owners, craftsmen) and other/not gainfully employed (students, military service, housewives, unemployed, retired)
+
+  -  Individual-level covariates that were included were sex (male/female), and age (continuous when adjusting for confounding, and in four categories when stratifying, 20–34, 35–49, 50–64, 65 years or older).
+
+Statistical model:
+
+  - Used multilevel logistic regression to model associations of the quit ratio (proportion former smokers of ever smokers) with SES, measured by education and occupation separately, with adjustments for age, sex and time.
+
+Findings:
+
+  - From 2000 to 2012 there have been large inequalities in smoking cessation rates in the EU, by education and occupation
+
+Discussion:
+
+  - some evidence that raising taxes might actually have a negative equity impact. An additional effect of tax increases is that smokers, especially from low SES groups, often switch to cheaper brands or cut down rather than quit. 
+  
+  - Although policies are generally credited with bringing down the overall smoking prevalence, they have not succeeded in decreasing the inequalities in smoking, possibly even increasing them.
+  
+  - The finding that socioeconomic inequalities continued to increase during a period of strong improvements in tobacco control policy supports the plea, for future tobacco control policies, to be more specifically targeted at low SES groups.
+
+::: {.callout-note title = "Summary of smoking cessation success across socioeconomic groups"}
+
+In US, those with low SES in their life courses were less likely to quit than those with persistent high SES
+
+In EU, there have been large inequalities in smoking cessation rates by education and occupation. Inequalities were small and cessation rates were higher in low SES group, then cessation rates not change in low SES group but increased in high SES group, leading to an increase in inequalities.  
+
+:::
+
+#### Geographic disparities
+
+[@noonan2025rural]
+
+Background
+
+- Providing updated estimates on differences in the use of cessation supports and quitting between urban and rural populations is a critical step in the tobacco control movement so that public health efforts can be shaped to better meet the unique cessation needs of rural populations
+
+- Little evidence on a national scale that has examined differences in cessation factors and quit ratios between rural and urban populations. 
+
+Aim
+
+  - Examine the preva-lence of cessation supports, including both medicinal and behavioral, among those who currently smoke with a past year quit attempt(recently attempted to quit) by rural and urban status and geographic region
+    
+    => Odds of cessation are significantly higher among those who use cessation supports, so understanding differences in cessation support among rural/urban status can provide information for tailoring interventions to increase the use of cessation aids.
+
+  - Examine lifetime quitting in rural versus urban peo-ple who smoke and by geographic region
+
+Data
+
+  - Nationally representative **longitudinal cohort study** that surveys tobacco use patterns and their associated effects on health outcomes of US youth and adults aged 12 and older
+
+  - Adult respondents who reported current daily smoking (i.e., reported ever smoking a cigarette, having smoked more than 100 cigarettes in their lifetime,and currently smoking every day or someday smoking)
+  
+  - Reported a quit attempt in the past 12 months (recently attempted quitting)
+
+  - Life-time quitting estimates were operationalized by the number of people who reported former smoking (defined as smoking 100 cigarettes in their lifetime and not currently smoking) divided by the number of people who ever smoked (defined as smoking at least 100 cigarettes in their lifetime). 
+
+Statistical method
+  
+  - cessation-related factors => chi-square test for association
+  
+  - Cessation-related factors between rural and urban were examined overall and within each geographic region
+  
+  - Quit ratios were also examined via unadjusted analyses and via multivariable logistic regression including the potential confounders such as age, gender, race/ethnicity, and educational attainment.
+
+Results
+
+  - Rural vs urban 
+
+    - people who smoke with a past year quit attempt were more likely to be **White non-Hispanic race/ethnicity, have lower educational attainment, have greater cigarette dependence** (based on average Cigarettes per Day(CPD) and time to first cigarette)
+
+    - people who smoke with a past year quit attempt **did not differ** in terms of prevalence estimates of cessation supports (exception of a household smoking ban)
+
+    - use of **cessation medication** (NRT, prescriptions) were 23% **lower** 
+
+    - using an **e-cigarette** to help quit smoking were 30% **lower**
+    
+    - rural versus urban succeeders greater adjusted odds of **using medications** (p = 0.0396) for quitting smoking.
+  
+Findings
+
+  - lower adjusted odds of medication use to aid in quitting in rural versus urban people who smoke
+  
+  - when rural and urban participants are made more “similar” in terms of multiple social determinants of health(e.g., race, education) and cigarette dependence. **Rurality** emerges as an independent **risk factor** for lower medication use, similiar in using an e-cigarette to support quitting.
+  
+  => intersectionality in rural health and thus an important consideration when designing and evaluating 
+interventions.
+  
+### Previous studies in Korea
+
+**What research has been conducted on these topics among Korean populations, and what were the key findings?**
+
+[@lee2016socio]
+
+Background
+
+  - Even though the overall smoking rates have decreased in South Korea, socioeconomic inequality in smoking remains high [@khang2006socioeconomic; @khang2009impact]
+
+Aim
+
+  - Attempted to examine indicators of socioeconomic status (SES), particularly education and other factors which affect smoking cessation in Korean men
+
+  - Using longitudinal data for 4 years, we attempted to investigate inequalities in smoking cessation success by SES
+
+Data
+
+  - Current smokers were defined as adults who reported having smoked at least 100 cigarettes in their lifetime and now smoking every day or some days at baseline 
+  
+  - Four waves of the Korea Health Panel (2009, 2010, 2011, 2012) conducted by the National Health Insurance Service and the Korea Institute for Health and Social Affairs.
+
+Methodology
+
+  - Outcomes: Short-term success at smoking 
+  
+  - Independent variables: socio-demographic (SES(education level, income level and employment status) and marital status) and clinical (chronic disease) factors
+  
+  - Covariates: age, health insurance, residential area, cancers, circulatory system diseases, body mass index (BMI), and drinking frequency 
+
+  - generalized linear mixed model using smoking cessation between 2010 and 2012 as the dependent variable among smokers at the baseline in 2009
+
+Findings:
+
+  - number of chronic diseases showed a significant positive association with smoking cessation
+  
+  - men who are overweight or obese (OR = 1.529 (1.237 - 1.890))
+  
+  - Men who drink alcohol 2 or more times a week were less likely to stop smoking than those who were not drinking
+  
+  - Stratified by having chronic diseases
+  
+    - Men without chronic diseases: older than 65 years, with high school or above, overweight or obese (BMI ≥ 23) were more likely to quit  
+
+    - Men with chronic diseases: higher for those who were married or widowed/divorced/separated, overweight or obese
+    
+::: {.callout-note title = "Summary"}
+   
+In Korea men, factors related to smoking cessation (chronic diseases, BMI, year, education, marital status)    
+
+:::
+
+[@park2025socioeconomic]
+
+Aim
+  
+  - Some previous studies investigated the disparities based on SES indicator but have not accounted for occupation level, so they did
+  
+  - Examine disparities in the **intention to quit smoking**, an indicator of health behavior, based on the aforementioned SES indicators(education, income, and occupation level), using absolute and relative indices of inequality.
+  
+Data
+  
+  - KNHANES: A stratified, multistage, clustered probability sampling design, based on region size and demographic characteristics was used to collect the preliminary data 
+
+Methodology
+
+  - Socioeconomics indicators: education, income, occupation
+  
+  - Measures of inequalities: the slope index of inequality (SII), relative index of Inequality (RII), and odds ratio (OR)
+  
+  - the SII represents the prevalence difference, while the RII represents the prevalence ratio of health status between the lowest-ranking and highest-ranking groups
+  
+  - Socioeconomic inequalities (for education, income, and occupation) in intention to quit smoking within 6 months were measured using the following indices: adjusted odds ratio (aOR) between both groups using multivariable logistic regression, SII, RII
+
+Findings:
+
+  - observed significant socioeconomic inequality with the intention to quit smoking within 6 months
+  
+  - Income-related inequalities were not statistically significant, whereas education-related and occupation-related inequalities were statistically significant
+  
+  - There were inequalities in the intention to quit smoking plan depending on socioeconomic status, including education, household income, and occupational levels.
+
+
+### Definitions of smoking cessation outcomes
+
+**How have previous studies defined and measured successful and unsuccessful smoking cessation?**
+
+#### Smoking cessation
+
+[@lee2016socio]
+
+Short-term success at smoking cessation was assessed by surveying respondents who had not smoked for more than 6 months and were still not smoking
+
+Smoking status was measured by asking respondents “Have you smoked at least 100 cigarettes in your life time?” and if respondents answered “yes”, they were asked “Do you now smoke every day, some days, or not at all?”
+
+Those who reported having smoked at least 100 cigarettes in your lifetime and smoking at the time of the baseline survey in 2009 but not smoking at the time of the follow up survey were classified as former smokers
+
+Smokers who reported smoking cigarettes every day or some days and former smokers who reported not smoking at the time of the survey but having not smoked for less than 6 months were considered current smokers.
+
+[@jhun2006stages] revealed that a relatively small number of Korean smokers were prepared to quit and the stage distribution might be influenced by demographic, socioeconomic, and smoking characteristics.
+
+#### Quit intention
+
+[@reid2010socioeconomic]
+
+Quit intentions were derived from the survey item “Are you planning to quit smoking … within the next month, within the next 6 months, sometime in the future beyond 6 months, or are you not planning to quit?”. A dichotomous variable for any intentions (first three response categories) compared with no intentions (last category) was created
+
+[@park2025socioeconomic]
+
+intention to quit smoking within the next 6 months
+
+“Do you plan to quit smoking within 6 months?” 
+
+The possible responses were: 
+
+  (1) “I plan to quit smoking within 1 month”
+  
+  (2) “I plan to quit smoking within 6 months”
+  
+  (3) “I plan to quit smoking someday, but not within the next 6 months”; 
+  
+  (4) “I have no intention to quit smoking at the moment.” 
+  
+We categorized responses as “Have plan” only for those who reported plans to quit smoking within either 1 month or 6 months.
+
+
+## Research question
+
+Previous studies have identified various factors associated with successful smoking cessation, including demographic characteristics, physical and mental health conditions, nicotine dependence, alcohol consumption, attitudes and beliefs, and access to cessation support, including pharmacological and policy-based interventions [@vangeli2011predictors; @hock2023covariates; @kundu2024overview]. However, smoking cessation outcomes are not equally distributed across socioeconomic and geographic groups. Socioeconomic disparities have been observed across educational and occupational groups. In the United States, individuals who experienced persistently low socioeconomic status (SES) throughout their life course were less likely to quit smoking than those with consistently high SES [@avila2022socioeconomic]. Similar findings have been reported across European countries, where higher educational attainment and occupational status were positively associated with smoking cessation, as measured by the quit ratio [@bosdriesz2015socioeconomic]. Regarding geographic disparities, previous research has reported lower utilization of certain smoking cessation support options among rural residents compared with their urban counterparts [@noonan2025rural].
+
+In South Korea, previous studies have also examined factors associated with smoking cessation, including demographic characteristics, socioeconomic status, and alcohol consumption [@lee2016socio]. Although smoking prevalence has declined, socioeconomic inequalities in smoking have persisted [@khang2006socioeconomic; @khang2009impact]. More recently, Park et al. (2025) reported significant socioeconomic inequalities in the intention to quit smoking within six months among Korean adults, particularly in relation to educational attainment and occupation [@park2025socioeconomic]. From a geographic perspective, Kong and Cho (2021) found that smoking quit attempts in Korea were associated with community-level characteristics, including tobacco outlet density, as well as individual-level factors [@kong2021effect].
+
+## Potential analytical approaches
+
+Based on what type of data we have
+
+**Cross-sectional data**:
+
+  - The outcome would represent smoking cessation status at the time of the survey
+
+  - applying a multilevel framework to smoking cessation status and by incorporating individual socioeconomic status, preventive behaviors, and geographic context (district-level of policy implementation followed WHO recommendation)
+
+  - reference paper: 
+
+[@kim2018service]
+
+Derive contextual indicators of medical provider quality and assess their relative importance along with the individual utilization of antenatal care (ANC) and institutional births with a skilled birth attendant (SBA) in India using a multilevel framework
+
+**Longitudinal data**:
+
+  - We may conduct causal mediation analysis using g-computation in longitudinal settings with time-varying exposure, mediators, and confounders on the success quitting smoking.
+
+## Reference
