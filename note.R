@@ -18,9 +18,12 @@ library(haven)
 library(skimr)
 library(dplyr)
 # Import the .sas7bdat file
-df <- read_sas("../Data/CHS/chs22_all.sas7bdat")
+df <- read_sas("../data/CHS/chs25_all.sas7bdat")
+colnames(df)
 
-skim(df)
+df |>
+  pull(sma_08z1) |>
+  unique()
 
 ## wt_h: household weight
 ## wt_p: individual weight

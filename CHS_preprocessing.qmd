@@ -1,0 +1,28 @@
+# CHS preprocessing
+
+## Library
+
+```{r}
+required <- c("readxl", "magrittr", "lubridate", "janitor", "dplyr", "skimr","haven")
+```
+
+Installing those that are not installed yet:
+
+```{r}
+to_install <- required[!required %in% installed.packages()[, "Package"]]
+if (length(to_install))
+  install.packages(to_install)
+```
+
+Loading the packages for interactive use:
+
+```{r}
+invisible(sapply(required, library, character.only = TRUE))
+```
+
+## Data importation
+
+```{r}
+df <- read_sas("../data/CHS/chs25_all.sas7bdat")
+```
+

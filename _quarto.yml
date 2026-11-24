@@ -11,6 +11,7 @@ book:
     - data_processing.qmd
     - data_explore.qmd
     - research_plan.qmd
+    - CHS_preprocessing.qmd
 
 warning: false
 message: false
